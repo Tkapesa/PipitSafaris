@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.hero-wrappper .video-wrapper-hero {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+.hero-wrappper .video-wrapper-hero .video-wrapper {
+  -o-object-fit: cover;
+     object-fit: cover; /* Ensure the video covers the entire container */
+  width: 100%;
+  height: 100vh;
+  display: block;
+  vertical-align: middle;
+}
+.hero-wrappper .video-wrapper-hero .video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, var(--tw-gradient-from), rgba(0, 0, 0, 0)); /* Gradient from bottom */
+  z-index: 1; /* Ensures the overlay is above the video */
+  --tw-gradient-from: #000; /* Set the gradient starting color */
+}
+.hero-wrappper .hero-detail-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* This will center the video element */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 32px 48px;
+  z-index: 8;
+}
+.hero-wrappper .hero-detail-wrapper .hero-detail-wrapper-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 672px;
+  width: 100%;
+  z-index: 8;
+}
+.hero-wrappper .hero-detail-wrapper .hero-detail-wrapper-inner h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+.hero-wrappper .hero-detail-wrapper .hero-detail-wrapper-inner span {
+  font-size: 24px;
+  margin-bottom: 4px;
+  text-transform: normal;
+  text-align: center;
+  color: #fff;
+}
+.hero-wrappper .hero-detail-wrapper .hero-detail-wrapper-inner strong {
+  font-size: 14px;
+  padding: 12px 24px;
+  color: #212121;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+.hero-wrappper .hero-detail-wrapper .hero-detail-wrapper-inner p {
+  color: #fff;
+}
+.hero-wrappper .selection-wrappper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 64px;
+  background: #000;
+}
+.hero-wrappper .selection-wrappper .text-main {
+  font-size: 14px;
+  color: #e8e8e8;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.hero-wrappper .selection-wrappper .selection-wrappper-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  gap: 110px;
+}
+.hero-wrappper .selection-wrappper .selection-wrappper-inner .trip-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-width: 214px;
+  width: 100%;
+}
+.hero-wrappper .selection-wrappper .selection-wrappper-inner .trip-wrapper strong {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
+}
+.hero-wrappper .selection-wrappper .selection-wrappper-inner .trip-wrapper p {
+  font-size: 14px;
+  color: #fff;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Nunito", sans-serif;
+}
+
+h1, h2, h3, p {
+  margin: 0px;
+}/*# sourceMappingURL=style.css.map */
