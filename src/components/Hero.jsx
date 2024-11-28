@@ -13,13 +13,13 @@ export default function Hero() {
             </div>
             <div className='hero-detail-wrapper'>
                 <div className='hero-detail-wrapper-inner'>
-                    <h1>Live your dream African safar</h1>
+                    <h1>Live your dream African safari</h1>
                     <span>Take the next step in creating lifetime memories</span>
                     <strong>Plan your trip</strong>
-                    <p>African safaris. Made easy.</p>
                 </div>
             </div>
             <div className='selection-wrappper'>
+            <p className='text-main'>African safaris. Made easy.</p>
                 <div className='selection-wrappper-inner'>
                     <div className='trip-wrapper'>
                         <strong>Choose your trip</strong>

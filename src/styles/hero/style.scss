@@ -75,14 +75,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
     padding-bottom: 64px;
     background: #000;
+    .text-main{
+        font-size: 14px;
+        color: #e8e8e8;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
     .selection-wrappper-inner{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
-        max-width: 852px;
+        // max-width: 852px;
         width: 100%;
         margin: 0 auto;
         gap: 110px;
@@ -90,7 +98,7 @@
             display: flex;
             flex-direction: column;
             gap: 2px;
-            max-width: 220px;
+            max-width: 214px;
             width: 100%;
             strong{
                 font-size: 20px;
@@ -101,6 +109,7 @@
             p{
                 font-size: 14px;
                 color: #fff;
+           
             }
         }
     }
