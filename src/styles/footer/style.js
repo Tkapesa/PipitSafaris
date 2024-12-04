@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // Define a reusable button component
 export const Wrapper = styled.footer`
   background-color:#e8e8e8;
-  padding: 14px 32px 32px;
+  padding: 64px 32px 32px;
   font-size: 16px;
   border: none;
   border-radius: 5px;
@@ -23,6 +23,9 @@ export const InnerBox = styled.div`
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: column;
+  }
     
 `;
 export const Coloumn = styled.div`
