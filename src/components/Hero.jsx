@@ -3,7 +3,8 @@ import '../styles/hero/style.css'
 export default function Hero() {
   return (
     <>
-        <section className='hero-wrappper'>
+        
+        {/* <section className='hero-wrappper'>
             <div className='video-wrapper-hero'>
                 <video className="video-wrapper" autoPlay muted loop playsInline>
                     <source src="https://static.cloudsafaris.com/public/Landing-Video.mp4?action=get" type="video/mp4" />
@@ -35,7 +36,7 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
     </>
   )
 }
