@@ -1,6 +1,8 @@
 import React from 'react'
-import { Figure, H3, Link, P } from '../styles/common/styles'
+import { Figure, H3, Direction, P } from '../styles/common/styles'
 import { InnerBox, Wrapper, Box, Div, Image, Wrape, Main, LWraper, List, ListItems, CopyRight } from '../styles/footer/style'
+import { Link } from "react-router-dom";
+
 
 export default function Footer() {
 	return (
@@ -46,14 +48,14 @@ export default function Footer() {
 							<H3>Company</H3>
 							<List>
 								<ListItems>Blog</ListItems>
-								<ListItems>About Us</ListItems>
+								<ListItems><Link to="/about">About Us</Link></ListItems>
 							</List>
 						</LWraper>
 						<LWraper>
 							<H3>Support</H3>
 							<List>
-								<ListItems>Terms of Service</ListItems>
-								<ListItems>Privacy Policy</ListItems>
+								<ListItems><Link to="/terms">Terms of Service</Link></ListItems>
+								<ListItems><Link to="/privacy">Privacy Policy</Link></ListItems>
 							</List>
 						</LWraper>
 						<LWraper>

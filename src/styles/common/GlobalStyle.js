@@ -7,6 +7,11 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Nunito', sans-serif;
   }
+
+  a{
+    text-decoration: none;
+    color: unset;
+  }
 `;
 
 export default GlobalStyle;

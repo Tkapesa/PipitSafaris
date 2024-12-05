@@ -71,7 +71,7 @@ export const Figure = styled.figure`
   padding: 0;
 `;
 
-export const Link = styled.a`
+export const Direction = styled.a`
   margin: 0;
   padding: 0;
   color: #5c5c5c;

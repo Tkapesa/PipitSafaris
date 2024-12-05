@@ -29,14 +29,14 @@ export const Div = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 24px;
-    border-radius: 1rem;
+ 
     &:nth-child(1){
     min-height: 400px;
     min-width: 400px;
     width: 100%;
     background: #457c7d;
     border-radius: 1rem;
+    padding: 24px;
     }
     &:nth-child(2){
         max-width: 400px;
@@ -45,7 +45,27 @@ export const Div = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        gap: 3px;
+       
+        div{
+            background: #457c7d;
+            padding: 24px;
+            border-radius: 1rem;
+        }
+       
         
+    }
+    &:nth-child(3){
+        max-width: 400px;
+        width: 100%;
+        height: 400px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 3px;
+        background: #457c7d;
+            padding: 24px;
+            border-radius: 1rem;
     }
 `;
 
