@@ -1,3 +1,8 @@
+import React, { useState } from "react";
+import Data from "../../api/Safari.json";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import {
   Box,
   BoxWrapper,
@@ -15,71 +20,94 @@ import {
 } from "../../styles/home/Safaris";
 
 function Safaris() {
+  const [tourData, setTourData] = useState(Data);
+
+  if (!tourData) {
+    return <div>Loading...</div>;
+  }
+
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <>
-      <Container>
-        <H2>Safaris</H2>
-        <BoxWrapper>
-          <Box>
-            <Figure>
-              <Image
-                src="https://static.cloudsafaris.com/public/f3bed1be-5dbc-499a-b1f8-b584bd40bda5_crispin-jones-DDEBAl7ULAo-unsplash.jpg?action=get&host=true&width=800"
-                alt="Safari"
-                width={612}
-                height={364}
-              />
-            </Figure>
-            <Strong>Kilimanjaro 5 Day Marangu Route</Strong>
-
-            <Paper>7 days Tanzania</Paper>
-            <Text>Operated by Various suppliers</Text>
-            <Text style={{ marginTop: "0.75rem" }}>
-              Join a 5-day guided trek on the Marangu Route to Mount
-              Kilimanjaro, featuring stunning views and comfortable sleeping
-              huts.
-            </Text>
-            <List>
-              <ListItems>Wildlife</ListItems>
-              <ListItems>Photography</ListItems>
-              <ListItems>Family</ListItems>
-            </List>
-          </Box>
-
-          <Box>
-            <Figure>
-              <Image
-                src="https://static.cloudsafaris.com/public/c0d3542f-1a1e-492a-bc4f-5eb2711ed4cb_kilimanjaro.jpeg?action=get&host=true&width=800"
-                alt="Safari"
-                width={612}
-                height={364}
-              />
-            </Figure>
-            <Strong>Kilimanjaro 6 Day Machame Route</Strong>
-
-            <Paper>8 days Tanzania</Paper>
-            <Text>Operated by Various suppliers</Text>
-            <Text style={{ marginTop: "0.75rem" }}>
-              Embark on an exhilarating 6-day journey, enjoying stunning
-              landscapes and diverse ecosystems, culminating at Kilimanjaro's
-              breathtaking summit.
-            </Text>
-            <List>
-              <ListItems>Wildlife</ListItems>
-              <ListItems>Photography</ListItems>
-              <ListItems>Family</ListItems>
-            </List>
-            <PriceWrapper>
-              <Text>Starting at</Text>
-              <Price>
-                <Strong>$1,973</Strong>
-                <Strong>USD</Strong>
-              </Price>
-              <Paper>Per Person</Paper>
-            </PriceWrapper>
-          </Box>
-        </BoxWrapper>
-      </Container>
-    </>
+    <Container>
+      <H2>Safaris</H2>
+      <BoxWrapper>
+        {tourData.length > 0 ? (
+          <Slider {...settings}>
+            {tourData.map((tour, index) => (
+              <Box key={index}>
+                <Figure>
+                  <Image
+                    src={tour.imageSrc}
+                    alt="Safari"
+                    width={612}
+                    height={364}
+                  />
+                </Figure>
+                <Strong>{tour.title}</Strong>
+                <Paper>{tour.location}</Paper>
+                <Text>{tour.operator}</Text>
+                <Text style={{ marginTop: "0.75rem" }}>{tour.description}</Text>
+                <List>
+                  {tour.highlights && tour.highlights.length > 0 ? (
+                    tour.highlights.map((highlight, index) => (
+                      <ListItems key={index}>{highlight}</ListItems>
+                    ))
+                  ) : (
+                    <Text>No highlights available</Text>
+                  )}
+                </List>
+                <PriceWrapper>
+                  <Text>Starting at</Text>
+                  <Price>
+                    <Strong>${tour.price}</Strong>
+                    <Strong>{tour.currency}</Strong>
+                    <Paper>{tour.priceDescription}</Paper>
+                  </Price>
+                </PriceWrapper>
+              </Box>
+            ))}
+            {/* <div>Hamzaadasdassadasdsadassadasdasdadas</div>
+            <div>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</div> */}
+          </Slider>
+        ) : (
+          <div>No tours available</div>
+        )}
+      </BoxWrapper>
+    </Container>
   );
 }
 

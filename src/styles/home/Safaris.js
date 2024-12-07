@@ -7,6 +7,7 @@ export const Container = styled.section`
   margin: 0 auto 0px auto;
   margin-top: 6rem;
   margin-bottom: 6rem;
+  
 `;
 
 export const H2 = styled.h2`
@@ -17,17 +18,20 @@ export const H2 = styled.h2`
 
 export const BoxWrapper = styled.div`
   max-width: 1240px;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: space-between; */
   gap: 16px;
   box-sizing: border-box;
 `;
 
 export const Box = styled.div`
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
+display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
 `;
 
 export const Figure = styled.figure`
@@ -70,13 +74,19 @@ export const ListItems = styled.li`
 
 export const Wrapper = styled.div``;
 export const PriceWrapper = styled.div`
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 12px;
+     
 
 `;
 
 export const Price = styled.div`
 display: flex;
 align-items: center;
+gap: .25rem;
+font-size: 12px;
 
 `;
