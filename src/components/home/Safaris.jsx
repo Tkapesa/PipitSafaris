@@ -71,10 +71,10 @@ function Safaris() {
             <PriceWrapper>
               <Text>Starting at</Text>
               <Price>
-                <Strong></Strong>
-                <Strong></Strong>
+                <Strong>$1,973</Strong>
+                <Strong>USD</Strong>
               </Price>
-              <Paper></Paper>
+              <Paper>Per Person</Paper>
             </PriceWrapper>
           </Box>
         </BoxWrapper>
