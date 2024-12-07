@@ -1,4 +1,4 @@
-import styled from "styled-components";
+ import styled from "styled-components";
 
 // Container with max-width and margin for layout
 export const Container = styled.section`
@@ -69,3 +69,14 @@ export const ListItems = styled.li`
 `;
 
 export const Wrapper = styled.div``;
+export const PriceWrapper = styled.div`
+display: flex;
+align-items: center;
+
+`;
+
+export const Price = styled.div`
+display: flex;
+align-items: center;
+
+`;

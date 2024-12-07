@@ -8,6 +8,8 @@ import {
   List,
   ListItems,
   Paper,
+  Price,
+  PriceWrapper,
   Strong,
   Text,
 } from "../../styles/home/Safaris";
@@ -66,6 +68,14 @@ function Safaris() {
               <ListItems>Photography</ListItems>
               <ListItems>Family</ListItems>
             </List>
+            <PriceWrapper>
+              <Text>Starting at</Text>
+              <Price>
+                <Strong></Strong>
+                <Strong></Strong>
+              </Price>
+              <Paper></Paper>
+            </PriceWrapper>
           </Box>
         </BoxWrapper>
       </Container>
