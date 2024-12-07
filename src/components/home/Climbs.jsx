@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Data from "../../api/Safari.json";
+import Data from "../../api/Climbs.json";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -19,7 +19,7 @@ import {
   Text,
 } from "../../styles/home/Safaris";
 
-function Safaris() {
+function Climbs() {
   const [tourData, setTourData] = useState(Data);
 
   if (!tourData) {
@@ -63,7 +63,7 @@ function Safaris() {
 
   return (
     <Container>
-      <H2>Safaris</H2>
+      <H2>Kilimanjaro climbs</H2>
       <BoxWrapper>
         {tourData.length > 0 ? (
           <Slider {...settings}>
@@ -109,4 +109,4 @@ function Safaris() {
   );
 }
 
-export default Safaris;
+export default Climbs;
