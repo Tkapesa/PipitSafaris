@@ -4,6 +4,7 @@ import Booking from "../components/home/Booking";
 import Hero from "../components/Hero";
 import Safaris from "../components/home/Safaris";
 import Climbs from "../components/home/Climbs";
+import Destinations from "../components/home/Destinations";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       <Hero />
       <Safaris />
       <Climbs />
+      <Destinations/>
       <Booking />
       <ReadySafari />
     </>
