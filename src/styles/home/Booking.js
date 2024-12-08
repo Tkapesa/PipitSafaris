@@ -60,6 +60,7 @@ export const Div = styled.div`
     background: linear-gradient(0deg, #457c7d 0%, #00949657 100%);
     border-radius: 1rem;
     padding: 24px;
+    min-height: 400px;
 
     /* Define the CSS variables locally if needed */
     --tw-gradient-from: #457c7d;
@@ -88,6 +89,7 @@ export const Div = styled.div`
     .inner{
       max-width: 400px;
       width: 100%;
+      min-height: 194px;
       @media (max-width: 767px){
       min-height: 191px;
     max-height: 191px;
@@ -98,7 +100,7 @@ export const Div = styled.div`
   }
 
   &:nth-child(3) {
-    min-height: 344px;
+    min-height: 400px;
     max-width: 400px;
     width: 100%;
     background: linear-gradient(0deg, #457c7d 0%, #00949657 100%);
