@@ -17,76 +17,28 @@ export const H2 = styled.h2`
 `;
 
 export const BoxWrapper = styled.div`
-  max-width: 1240px;
-  /* display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between; */
-  gap: 16px;
+  max-width: 292px;
+  height: 438px;
   box-sizing: border-box;
 `;
 
-export const Box = styled.div`
-display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    max-width: 600px;
-    width: 100%;
+export const Strong = styled.strong`
+    font-size: 1.5rem;
+    line-height: 2rem;
+color: #fff;
 `;
 
-export const Figure = styled.figure`
-  margin: 0 0 1rem 0;
+export const Paper = styled.span`
+color: #fff;
+font-size: .75rem;
+line-height: 1rem;
+letter-spacing: .1em;
+
 `;
-
-export const Image = styled.img`
-  border-radius: 0.75rem;
-`;
-
-export const Strong = styled.strong``;
-
-export const Paper = styled.span``;
 
 export const Text = styled.p`
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-`;
-
-export const List = styled.ul`
-  padding: 0px;
-  margin: 0px;
-  display: flex;
-  align-items: center;
-  gap: 0.375rem;
-  list-style: none;
-  margin-top: 0.75rem;
-`;
-export const ListItems = styled.li`
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  border: 1px solid #e8e8e8;
-  border-radius: 9999px;
-  color: #000;
-`;
-
-export const Wrapper = styled.div``;
-export const PriceWrapper = styled.div`
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 12px;
-     
-
-`;
-
-export const Price = styled.div`
-display: flex;
-align-items: center;
-gap: .25rem;
-font-size: 12px;
-
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-top: .5rem;
+  color: #E8E8E8;
 `;

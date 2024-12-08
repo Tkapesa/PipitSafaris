@@ -63,10 +63,12 @@ function Destinations() {
 
   return (
     <Container>
-      <H2>Kilimanjaro climbs</H2>
+      <H2>Explore top destinations</H2>
       <BoxWrapper>
           <Slider {...settings}>
-
+            <Paper>Tanzania</Paper>
+            <Strong>Stone Town, Zanzibar</Strong>
+            <Text>Nogorngoro Crater is a natural amphitheater of unparalleled beauty</Text>
           </Slider>
       </BoxWrapper>
     </Container>
