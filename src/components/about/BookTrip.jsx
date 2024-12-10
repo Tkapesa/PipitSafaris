@@ -1,13 +1,23 @@
 import {
     Button,
+    ButtonBlack,
     Container,
+    Div,
+    Dot,
     Figure,
     H2,
     H3,
     Image,
+    InnerDot,
+    InnerWrapper,
     Left,
+    List,
+    ListItems,
     Right,
+    Strong,
     Text,
+    Top,
+    Wrapper,
   } from "../../styles/about/BookTrip";
   
   function BookTrip() {
@@ -25,6 +35,71 @@ import {
               customer experience.
             </Text>
             <H3>How it works</H3>
+            <Wrapper>
+              <Top>
+                <Div>
+                  <Dot>
+                    <InnerDot></InnerDot>
+                  </Dot>
+                  <Strong>Choose your safari</Strong>
+                </Div>
+                <InnerWrapper>
+                <Strong>Select dates that are most convenient for you.</Strong>
+                  <List>
+                    <ListItems>All accommodations, transfers, food, and guides are included</ListItems>
+                    <ListItems>Tailor the trip with activities of your choice</ListItems>
+                    <ListItems>
+                    Select from an extensive list of incredible properties</ListItems>
+                  </List>
+                </InnerWrapper>
+                
+              </Top>
+              
+            </Wrapper>
+
+
+            <Wrapper>
+              <Top>
+                <Div>
+                  <Dot>
+                    <InnerDot></InnerDot>
+                  </Dot>
+                  <Strong>Pick your dates</Strong>
+                </Div>
+                <InnerWrapper>
+                <Strong>Select dates that are most convenient for you.</Strong>
+                  <List>
+                    <ListItems>All accommodations, transfers, food, and guides are included</ListItems>
+                    <ListItems>Tailor the trip with activities of your choice</ListItems>
+                    <ListItems>
+                    Select from an extensive list of incredible properties</ListItems>
+                  </List>
+                </InnerWrapper>
+                
+              </Top>
+              
+            </Wrapper>
+
+            <Wrapper>
+              <Top>
+                <Div>
+                  <Dot>
+                    <InnerDot></InnerDot>
+                  </Dot>
+                  <Strong>Confirm and enjoy</Strong>
+                </Div>
+                <InnerWrapper>
+                <Strong>Confirm your trip with our safari professionals.</Strong>
+                  <List>
+                    <ListItems>Receive a complimentary personal trip briefing</ListItems>
+                    <ListItems>Pay securely by credit card</ListItems>
+                    <ListItems>Travel confidently with on-ground support</ListItems>
+                  </List>
+                </InnerWrapper>
+                
+              </Top>
+              <ButtonBlack>Book a trip</ButtonBlack>
+            </Wrapper>
           </Left>
           <Right>
             <Figure>
