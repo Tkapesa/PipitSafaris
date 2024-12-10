@@ -9,6 +9,7 @@ export const Container = styled.section`
   margin: 0 auto;
   padding: 64px 0px;
   background: #f6f6f6;
+  box-sizing: border-box;
 
   @media (max-width: 1024px) {
     padding: 48px 16px;
@@ -53,10 +54,11 @@ export const H2 = styled.h2`
 
   @media (max-width: 768px) {
     font-size: 24px;
+    
   }
 
   @media (max-width: 480px) {
-    font-size: 20px;
+    font-size: 24px;
   }
 `;
 
@@ -65,13 +67,16 @@ export const Box = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
+  flex-direction: row;
 
   @media (max-width: 768px) {
     margin-top: 1.5rem;
+    flex-direction: column;
   }
 
   @media (max-width: 480px) {
     margin-top: 1rem;
+    flex-direction: column;
   }
 `;
 

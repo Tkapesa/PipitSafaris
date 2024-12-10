@@ -9,6 +9,7 @@ export const Container = styled.section`
   justify-content: space-between;
   margin: 8rem auto;
   padding: 0 20px;
+  box-sizing: border-box;
 
   @media (max-width: 1200px) {
     margin: 6rem auto;
@@ -86,6 +87,7 @@ export const InnerWrapper = styled.div`
  strong{
   padding-left: 30px;
   margin-left: 20px;
+  display: flex;
  }
   
 `;
@@ -157,15 +159,17 @@ export const Button = styled.button`
   }
 
   @media (max-width: 480px) {
-    width: 100px;
-    height: 28px;
     font-size: 14px;
+        display: inline-flex;
+        width: fit-content;
+    
   }
 `;
 
 export const H2 = styled.h2`
   font-size: 36px;
   color: #000;
+  display: flex;
 
   @media (max-width: 1200px) {
     font-size: 32px;
@@ -187,6 +191,7 @@ export const H2 = styled.h2`
 export const H3 = styled.h2`
   font-size: 20px;
   color: #000;
+  display: flex;
 
   @media (max-width: 768px) {
     font-size: 18px;
@@ -238,6 +243,7 @@ export const Right = styled.div`
 
   @media (max-width: 768px) {
     max-width: 240px;
+    display: none;
   }
 
   @media (max-width: 480px) {
@@ -267,6 +273,7 @@ export const Figure = styled.figure`
 
     @media (max-width: 768px) {
       right: -50px;
+      /* flex-direction: column; */
       img {
         width: 200px;
         height: 300px;

@@ -10,6 +10,11 @@ export const Container = styled.section`
   padding: 64px 0px;
   margin: 8rem auto;
   gap: 2.5rem;
+  box-sizing: border-box;
+  @media screen and (max-width:767px){
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 `;
 
 export const H2 = styled.h2`
