@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Data from "../../api/Climbs.json";
+import Data from "../../api/Safari.json";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -46,7 +46,7 @@ function Climbs() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 1,
         },
@@ -54,7 +54,7 @@ function Climbs() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.3,
           slidesToScroll: 1,
         },
       },
@@ -80,7 +80,7 @@ function Climbs() {
                 <Strong>{tour.title}</Strong>
                 <Paper>{tour.location}</Paper>
                 <Text>{tour.operator}</Text>
-                <Text style={{ marginTop: "0.75rem" }}>{tour.description}</Text>
+                <Text className="text-main">{tour.description}</Text>
                 <List>
                   {tour.highlights && tour.highlights.length > 0 ? (
                     tour.highlights.map((highlight, index) => (

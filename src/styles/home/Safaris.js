@@ -7,6 +7,12 @@ export const Container = styled.section`
   margin: 0 auto 0px auto;
   margin-top: 6rem;
   margin-bottom: 8rem;
+  @media screen and (max-width: 767px){
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
   
 `;
 
@@ -20,6 +26,7 @@ export const BoxWrapper = styled.div`
   /* max-width: 292px; */
   gap: 16px;
   box-sizing: border-box;
+
 `;
 
 export const Box = styled.div`
@@ -28,6 +35,17 @@ display: flex;
     flex-direction: column;
     max-width: 600px;
     width: 100%;
+    .text-main{
+      margin-top:0.75rem;
+      color: #000;
+      @media screen and (max-width: 767px){
+        font-size: 12px;
+      }
+    }
+      @media screen and (max-width: 767px){
+    max-width: 238px;
+    width: 100%;
+  }
 `;
 
 export const Figure = styled.figure`
@@ -36,15 +54,30 @@ export const Figure = styled.figure`
 
 export const Image = styled.img`
   border-radius: 0.75rem;
+  @media screen and (max-width: 767px){
+        height: 119px;
+        width: 238px;
+  }
 `;
 
-export const Strong = styled.strong``;
+export const Strong = styled.strong`
+display: block;
+@media screen and (max-width: 767px){
+  font-size: 14px;
+}
+`;
 
-export const Paper = styled.span``;
+export const Paper = styled.span`
+
+`;
 
 export const Text = styled.p`
   font-size: 0.875rem;
   line-height: 1.25rem;
+  color: #737373;
+  &:nth-child(2){
+    color: #000;
+  }
 `;
 
 export const List = styled.ul`
@@ -75,6 +108,11 @@ export const PriceWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     padding-top: 12px;
+    p{
+      @media screen and (max-width: 767px){
+        font-size: 12px;
+      }
+    }
      
 
 `;

@@ -5,10 +5,16 @@ export const Container = styled.section`
   max-width: 1240px;
   width: 100%;
   margin: 0 auto 72px auto;
+  box-sizing: border-box;
 
   h2 {
     padding: 48px 0;
     font-size: 30px;
+  }
+
+  @media screen and (max-width: 767px){
+    padding-left: 24px;
+    padding-right: 24px;
   }
 `;
 
@@ -20,6 +26,7 @@ export const Wrapper = styled.div`
   gap: 0.75rem;
   @media (max-width: 767px){
     flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -47,7 +54,7 @@ export const Div = styled.div`
       @media (max-width: 767px){
         min-height: 191px;
         max-height: 191px;
-        max-width: 300px;
+        max-width: 100%;
         width: 100%;
         }
     }
@@ -57,21 +64,15 @@ export const Div = styled.div`
     min-height: 344px;
     max-width: 400px;
     width: 100%;
-    background: linear-gradient(0deg, #457c7d 0%, #00949657 100%);
+    background: linear-gradient(to right, #00000080, #00000040);
     border-radius: 1rem;
     padding: 24px;
     min-height: 400px;
 
-    /* Define the CSS variables locally if needed */
-    --tw-gradient-from: #457c7d;
-    --tw-gradient-to: #8ca883;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-    --tw-text-opacity: 1;
-
     @media (max-width: 767px){
       min-height: 191px;
     max-height: 191px;
-    max-width: 300px;
+    max-width: 100%;
     width: 100%;
     }
   }
@@ -79,8 +80,9 @@ export const Div = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+
     div {
-      background: linear-gradient(0deg, #457c7d 0%, #00949657 100%);
+      background: linear-gradient(to right, #00000080, #00000040);
       padding: 24px;
       border-radius: 1rem;
 
@@ -93,7 +95,7 @@ export const Div = styled.div`
       @media (max-width: 767px){
       min-height: 191px;
     max-height: 191px;
-    max-width: 300px;
+    max-width: 100%;
     width: 100%;
     }
     }
@@ -103,17 +105,14 @@ export const Div = styled.div`
     min-height: 400px;
     max-width: 400px;
     width: 100%;
-    background: linear-gradient(0deg, #457c7d 0%, #00949657 100%);
+    background: linear-gradient(to right, #00000080, #00000040);
     border-radius: 1rem;
     padding: 24px;
-    --tw-gradient-from: #457c7d;
-    --tw-gradient-to: #8ca883;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-    --tw-text-opacity: 1;
+
     @media (max-width: 767px){
       min-height: 191px;
     max-height: 191px;
-    max-width: 300px;
+    max-width: 100%;
     width: 100%;
   }
   }

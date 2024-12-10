@@ -7,6 +7,10 @@ export const Container = styled.section`
   margin: 0 auto 0px auto;
   margin-top: 6rem;
   margin-bottom: 8rem;
+  @media screen and (max-width: 767px){
+    padding-left: 24px;
+    padding-right: 24px;
+  }
   
 `;
 
@@ -20,16 +24,10 @@ export const BoxWrapper = styled.div`
   /* max-width: 292px; */
   gap: 16px;
   box-sizing: border-box;
-  .slick-slide {
-    display: flex !important;
-    justify-content: center;
-    margin-right: 20px;
-    max-width: 292px !important;
-  }
 `;
 
 export const Box = styled.div`
- display: flex !important;
+ display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-end;
@@ -39,6 +37,12 @@ export const Box = styled.div`
   color: #fff;
   border-radius: 1rem;
   position: relative;
+  @media screen and (max-width: 767px){
+    max-width: 90%;
+    width: 100%;
+    max-height: 357px;
+    min-height: 357px;
+  }
 
 `;
 
@@ -48,6 +52,11 @@ export const Figure = styled.figure`
   height: 438px;
   position: absolute;
   z-index: -1;
+  @media screen and (max-width: 767px){
+    max-width: 100%;
+    width: 100%;
+    max-height: 357px;
+  }
 `;
 
 export const Image = styled.img`
@@ -58,6 +67,11 @@ export const Image = styled.img`
   /* object-fit: ; */
   display: block;
   object-fit: cover;
+  @media screen and (max-width: 767px){
+    max-width: 100%;
+    width: 100%;
+    max-height: 357px;
+  }
 
 `;
 
@@ -124,6 +138,10 @@ export const Div = styled.div`
     padding: 0px 24px 24px 24px;
     display: flex;
     flex-direction: column;
+    padding-top: 300px;
+    @media screen and (max-width: 767px){
+      padding-top: 240px;
+    }
 
 `;
 
