@@ -41,7 +41,7 @@ export default function Footer() {
 								<ListItems>Hotels & Lodges</ListItems>
 								<ListItems>Destinations</ListItems>
 								<ListItems>Affiliates</ListItems>
-								<ListItems>Find your trip</ListItems>
+								<ListItems><Link to="/find-trip">Find your trip</Link></ListItems>
 							</List>
 						</LWraper>
 						<LWraper>
