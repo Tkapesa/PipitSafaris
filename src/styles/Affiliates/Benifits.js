@@ -18,7 +18,6 @@ export const H2 = styled.h2`
   font-size: 48px;
   color: #212121;
   line-height: 1;
-  /* padding-bottom: 8px; */
   @media screen and (max-width:767px){
     font-size: 24px;
   }
