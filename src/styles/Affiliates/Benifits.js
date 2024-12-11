@@ -9,7 +9,7 @@ export const Container = styled.section`
     flex-direction: column ;
     box-sizing: border-box; 
     margin: 0 auto;
-    margin-bottom: 72px;
+    margin-bottom: 120px;
     gap: 3rem;
 `;
 
@@ -18,6 +18,7 @@ export const H2 = styled.h2`
   font-size: 48px;
   color: #212121;
   line-height: 1;
+  text-align: left;
   @media screen and (max-width:767px){
     font-size: 24px;
   }
