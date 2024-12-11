@@ -7,6 +7,7 @@ import PrivacyPage from "./pages/PrivacyPage";
 import TermsPage from "./pages/TermsPage";
 import ScrollToTop from "./components/ScrollToTop";
 import FindTripPage from "./pages/FindTripPage";
+import AffiliatesPage from "./pages/AffiliatesPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/find-trip" element={<FindTripPage />} />
+        <Route path="/affiliates" element={<AffiliatesPage />} />
       </Routes>
       <Footer />
     </Router>

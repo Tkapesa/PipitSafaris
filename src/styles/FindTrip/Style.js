@@ -11,6 +11,15 @@ export const Container = styled.section`
     background-size: cover;  
     position: relative;
     z-index: 9;
+    box-sizing: border-box;
+   
+    @media screen and (max-width:767px){
+    padding-bottom: 64px;
+    padding-top: 34px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 100%;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -28,6 +37,9 @@ export const H2 = styled.h2`
   color: #fff;
   margin-top: 48px;
   text-align: center;
+  @media screen and (max-width:767px){
+    font-size: 24px;
+  }
 `;
 
 export const Strong = styled.strong`
@@ -36,6 +48,9 @@ export const Strong = styled.strong`
   padding-bottom: 16px;
   text-align: center;
   text-transform: uppercase;
+  @media screen and (max-width:767px){
+    font-size: 18px;
+  }
 `;
 
 export const Text = styled.p`
@@ -85,5 +100,9 @@ export const Div = styled.div`
     backdrop-filter: blur(4px);
     background: #00000080;
     width: 100%;
+ 
+    @media screen and (max-width: 767px){
+        height: 105%;
+    }
 `;
 
