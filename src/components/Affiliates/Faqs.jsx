@@ -17,8 +17,12 @@ export default function Faqs() {
       answer: "Hooks are functions that let you use state and other React features in functional components."
     },
     {
-      question: "What is JSX?",
-      answer: "JSX is a syntax extension for JavaScript that looks similar to XML or HTML."
+      question: "What is the commission structure?",
+      answer: "The commission structure is variable and depends on the affiliate. Typically, affiliates can expect a percentage on profits in the range of 20% - 50%. This may result in a commission of $50 USD to over $1000 USD depending on trip factors."
+    },
+    {
+      question: "How can I go on a safari with my referred travellers?",
+      answer: "As an affiliate you'll get a signficant discount (pending certain criteria). Depending on your group size, we may be able to compensate your travels (usually with a group of 15 people or more)."
     },
   ];
 
@@ -35,7 +39,7 @@ export default function Faqs() {
       <H2>Frequently Asked Questions</H2>
       <Wrapper>
         {faqData.map((faq, index) => (
-          <div key={index}>
+          <div key={index} className='q-wrapper'>
             <Question onClick={() => handleToggle(index)}>
               {faq.question}
               <span>{openFAQ === index ? '-' : '+'}</span> {/* Toggle icon */}

@@ -24,6 +24,9 @@ export const H2 = styled.h2`
 
 export const Wrapper = styled.div`
   width: 100%;
+  .q-wrapper{
+    border-bottom: 1px solid #e8e8e8;
+  }
 `;
 
 export const Question = styled.div`
@@ -33,11 +36,11 @@ export const Question = styled.div`
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 24px 0;
   transition: color 0.3s ease;
 
   &:hover {
-    color: #0056b3;
+    // color: #0056b3;
   }
 
   span {
@@ -50,7 +53,7 @@ export const Question = styled.div`
 export const Answer = styled.div`
   padding-left: 20px;
   margin-top: 5px;
-  color: #555;
+  color: #737373;
   height: ${(props) => (props.isOpen ? 'auto' : '0')}; /* Control height dynamically */
   opacity: ${(props) => (props.isOpen ? '1' : '0')}; /* Fade in/out */
   overflow: hidden; /* Hide content when collapsed */
@@ -61,5 +64,6 @@ export const Text = styled.p`
   margin: 0;
   font-size: 16px;
   line-height: 1.6;
-  color: #555;
+  color: #737373;
+  padding: 0px 48px 24px 0px;
 `;
