@@ -8,9 +8,9 @@ export const Container = styled.section`
     flex-direction: column ;
     box-sizing: border-box; 
     margin: 0 auto;
-    padding-bottom: 8rem;
+    padding-bottom: 0rem;
     background: #E8E8E8;
-    margin-bottom: 32px;
+    margin-bottom: 72px;
 `;
 
 export const Wrapper = styled.div`
@@ -22,7 +22,7 @@ export const Wrapper = styled.div`
     max-width: 1220px;
     width: 100%;
     margin: 0 auto;
-    padding: 96px 32px;
+    padding: 48px 32px;
 
 
 `;
