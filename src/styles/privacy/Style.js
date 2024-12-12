@@ -4,12 +4,13 @@ import styled from "styled-components";
 export const Container = styled.section`
   max-width: 1152px;
   width: 100%;
-  padding: 24px;
+  padding: 130px 24px 24px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   margin: 0 auto;
   box-sizing: border-box;
+  /* padding-top: 130px !important; */
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 9rem;

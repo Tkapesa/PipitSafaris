@@ -10,6 +10,7 @@ export const Container = styled.section`
   justify-content: space-between;
   margin: 0 auto;
   box-sizing: border-box;
+  padding: 130px 24px 24px;
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 9rem;

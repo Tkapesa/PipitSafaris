@@ -1,18 +1,22 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  top: 40px;
-  z-index: 99;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1152px;
-  left: 0;
-  right: 0;
-
+box-sizing: border-box;
+padding: 25px 25px;
+display: flex
+;
+align-items: center;
+justify-content: space-between;
+position: absolute;
+top: -10px;
+z-index: 99;
+width: 100%;
+margin: 0 auto;
+left: 0;
+right: 0;
+background: #000000a8;
+position: fixed;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 2rem;
@@ -50,6 +54,18 @@ export const MenuItems = styled.li`
   padding: 8px 16px;
   color: #fff;
   font-size: 14px;
+  transition: 0.3s all;
+  border: 1px solid transparent;
+  &:hover{
+    background: #e3e3e3b5;
+    border-radius: .5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #212121;
+    cursor: pointer;
+  }
 
   @media (max-width: 768px) {
     font-size: 16px;
