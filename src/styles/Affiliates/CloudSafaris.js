@@ -10,7 +10,7 @@ export const Container = styled.section`
   align-items: center;
   box-sizing: border-box;
   position: relative; /* Set the container as relative for the overlay to be absolute */
-
+ 
   /* Solid green background */
   background-color: #006400; /* Dark Green (you can choose any shade of green) */
   
@@ -35,6 +35,10 @@ export const Container = styled.section`
 
   /* Ensure the text and button are visible above the overlay */
   z-index: 2;
+
+  @media screen and (max-width: 767px){
+    box-sizing: border-box;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -54,6 +58,9 @@ export const H2 = styled.h2`
     color: #fff; /* White text color */
     margin-bottom: 20px; /* Add space below the heading */
     z-index: 9;
+    @media screen and (max-width: 767px){
+      font-size: 24px;
+  }
 `;
 
 export const Button = styled.button`

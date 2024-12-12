@@ -13,6 +13,8 @@ export const Container = styled.section`
     @media screen and (max-width: 767px){
       padding-top: 8rem;
       padding-bottom: 8rem;
+      padding-left: 15px; 
+      padding-right: 15px;
     }
 `;
 
@@ -51,7 +53,7 @@ export const Right = styled.div`
   max-width: 441px;
   width: 100%;
   @media screen and (max-width: 767px){
-      
+      display: none;
     }
 `;
 

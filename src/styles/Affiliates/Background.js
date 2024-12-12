@@ -15,6 +15,7 @@ export const Container = styled.section`
     @media screen and (max-width:767px){
       padding-top: 6rem;
       padding-bottom: 6rem;
+      box-sizing: border-box; 
     }
 `;
 
@@ -33,6 +34,8 @@ export const Wrapper = styled.div`
       justify-content: center;
       flex-direction: column-reverse !important;
       padding: 96px 32px;
+      align-items: center;
+      box-sizing: border-box; 
 }
 
 `;

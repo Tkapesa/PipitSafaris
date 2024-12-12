@@ -11,6 +11,13 @@ export const Container = styled.section`
     margin: 0 auto;
     margin-bottom: 120px;
     gap: 3rem;
+    box-sizing: border-box;
+    @media screen and (max-width:767px){
+      box-sizing: border-box; 
+      padding-left: 15px; 
+      padding-right: 15px;
+      box-sizing: border-box;
+  }
 `;
 
 
@@ -20,7 +27,8 @@ export const H2 = styled.h2`
   line-height: 1;
   text-align: left;
   @media screen and (max-width:767px){
-    font-size: 24px;
+    font-size: 48px;
+    text-align: center;
   }
 `; 
 
@@ -28,9 +36,10 @@ export const Wrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2rem;
+    gap: 8rem;
     justify-content: center;
     text-align: center;
+    box-sizing: border-box; 
 `;
 
 export const Box = styled.div`
@@ -65,7 +74,7 @@ export const Strong = styled.strong`
   text-align: center;
 
   @media screen and (max-width:767px){
-    font-size: 18px;
+    font-size: 20px;
   }
 `;
 

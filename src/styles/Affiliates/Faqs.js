@@ -11,6 +11,12 @@ export const Container = styled.section`
   margin: 0 auto;
   margin-bottom: 120px;
   gap: 3rem;
+  @media screen and (max-width: 767px) {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
 `;
 
 export const H2 = styled.h2`
@@ -19,7 +25,8 @@ export const H2 = styled.h2`
   line-height: 1;
   text-align: left;
   @media screen and (max-width: 767px) {
-    font-size: 24px;
+    font-size: 48px;
+    text-align: center;
   }
 `;
 
@@ -49,6 +56,9 @@ export const Question = styled.div`
     line-height: 1;
     margin-left: 10px;
   }
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+  }
 `;
 
 export const Answer = styled.div`
@@ -59,6 +69,9 @@ export const Answer = styled.div`
   opacity: ${(props) => (props.isOpen ? '1' : '0')}; /* Fade in/out */
   overflow: hidden; /* Hide content when collapsed */
   transition: height 0.4s ease, opacity 0.4s ease; /* Smooth transition */
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+  }
 `;
 
 export const Text = styled.p`
