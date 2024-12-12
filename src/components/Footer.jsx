@@ -47,7 +47,7 @@ export default function Footer() {
 						<LWraper>
 							<H3>Company</H3>
 							<List>
-								<ListItems>Blog</ListItems>
+								<ListItems><Link to="/blog">Blog</Link></ListItems>
 								<ListItems><Link to="/about">About Us</Link></ListItems>
 							</List>
 						</LWraper>
