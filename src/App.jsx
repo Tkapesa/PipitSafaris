@@ -9,6 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import FindTripPage from "./pages/FindTripPage";
 import AffiliatesPage from "./pages/AffiliatesPage";
 import BlogPage from "./pages/BlogPage";
+import TripsPage from "./pages/TripsPage";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
         <Route path="/find-trip" element={<FindTripPage />} />
         <Route path="/affiliates" element={<AffiliatesPage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/trips" element={<TripsPage />} />
+
       </Routes>
       <Footer />
     </Router>

@@ -37,7 +37,7 @@ export default function Footer() {
 						<LWraper>
 							<H3>General</H3>
 							<List>
-								<ListItems>Trips</ListItems>
+								<ListItems><Link to="/trips">Trips</Link></ListItems>
 								<ListItems>Hotels & Lodges</ListItems>
 								<ListItems>Destinations</ListItems>
 								<ListItems><Link to="/affiliates">Affiliates</Link></ListItems>
