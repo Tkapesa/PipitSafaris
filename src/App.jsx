@@ -10,12 +10,14 @@ import FindTripPage from "./pages/FindTripPage";
 import AffiliatesPage from "./pages/AffiliatesPage";
 import BlogPage from "./pages/BlogPage";
 import TripsPage from "./pages/TripsPage";
+import Header from "./components/Header";
 
 function App() {
   return (
     <Router>
       <GlobalStyle />
       <ScrollToTop />
+      <Header/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
