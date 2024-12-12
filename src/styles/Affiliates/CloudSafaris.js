@@ -53,6 +53,7 @@ export const H2 = styled.h2`
     text-align: center;
     color: #fff; /* White text color */
     margin-bottom: 20px; /* Add space below the heading */
+    z-index: 9;
 `;
 
 export const Button = styled.button`
