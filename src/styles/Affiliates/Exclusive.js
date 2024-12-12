@@ -9,6 +9,11 @@ export const Container = styled.section`
     box-sizing: border-box; 
     margin: 0 auto;
     padding-bottom: 8rem;
+    box-sizing: border-box;
+    @media screen and (max-width: 767px){
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
 `;
 
 export const Wrapper = styled.div`
@@ -17,6 +22,9 @@ export const Wrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    @media screen and (max-width: 767px){
+      
+    }
 
 
 `;
@@ -30,6 +38,9 @@ export const Left = styled.div`
   max-width: 727px;
   width: 100%;
   text-align: left;
+  @media screen and (max-width: 767px){
+      
+    }
 `;
 
 export const Right = styled.div`
@@ -39,15 +50,24 @@ export const Right = styled.div`
   justify-content: space-between;
   max-width: 441px;
   width: 100%;
+  @media screen and (max-width: 767px){
+      
+    }
 `;
 
 export const Figure = styled.figure`
   margin: 0px;
+  @media screen and (max-width: 767px){
+      
+    }
   
 `;
 
 export const Image = styled.img`
   border-radius: 1rem;
+  @media screen and (max-width: 767px){
+      
+    }
 `;
 
 export const H2 = styled.h2`
@@ -55,7 +75,7 @@ export const H2 = styled.h2`
   color: #212121;
   line-height: 1;
   @media screen and (max-width:767px){
-    font-size: 24px;
+    font-size: 48px;
   }
 `;
 
@@ -72,19 +92,28 @@ export const Text = styled.p`
   font-size: 24px;
   color: #212121;
   max-width: 80%;
+  @media screen and (max-width: 767px){
+      max-width: 100%;
+    }
 
 `;
 
 export const BoxWrapper = styled.div`
-
+    @media screen and (max-width: 767px){
+      
+    }
 `;
 
 export const Box = styled.div`
-
+    @media screen and (max-width: 767px){
+      
+    }
 `;
 
 export const Div = styled.div`
-
+    @media screen and (max-width: 767px){
+      
+    }
 `;
 
 export const Button = styled.button`
@@ -95,5 +124,8 @@ export const Button = styled.button`
     display: flex;
     width: max-content;
     padding: 12px 14px;
+    @media screen and (max-width: 767px){
+      
+    }
 `;
 
