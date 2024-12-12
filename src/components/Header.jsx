@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ButtonsPrimary, ButtonsSecondary, ButtonsWrapper, Figure, Logo, MenuItems, MenuList, Wrapper, Image, Hamburger, MobileMenu } from '../styles/header/Style';
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +27,7 @@ export default function Header() {
 
         {/* Menu List */}
         <MenuList>
-          <MenuItems>Trips</MenuItems>
+          <MenuItems><Link to="/trips">Trips</Link></MenuItems>
           <MenuItems>Hotels & Lodges</MenuItems>
           <MenuItems>Destinations</MenuItems>
         </MenuList>

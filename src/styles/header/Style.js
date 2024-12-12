@@ -3,12 +3,11 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
 box-sizing: border-box;
 padding: 25px 25px;
-display: flex
-;
+display: flex;
 align-items: center;
 justify-content: space-between;
 position: absolute;
-top: -10px;
+top: 0px;
 z-index: 99;
 width: 100%;
 margin: 0 auto;
@@ -17,7 +16,8 @@ right: 0;
 background: #000000a8;
 position: fixed;
 box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
-  @media (max-width: 768px) {
+height: 60px; 
+@media (max-width: 768px) {
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
@@ -57,13 +57,13 @@ export const MenuItems = styled.li`
   transition: 0.3s all;
   border: 1px solid transparent;
   &:hover{
-    background: #e3e3e3b5;
+    background: #fff3;
     border-radius: .5rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    color: #212121;
+    color: #fff;
     cursor: pointer;
   }
 
@@ -89,6 +89,7 @@ export const ButtonsPrimary = styled.div`
   color: #fff;
   background-color: #fff3;
   border-radius: .5rem;
+   cursor: pointer;
 
   @media (max-width: 768px) {
     font-size: 16px;
@@ -102,6 +103,7 @@ export const ButtonsSecondary = styled.div`
   color: #fff;
   background-color: #212121;
   border-radius: .5rem;
+  cursor: pointer;
 
   @media (max-width: 768px) {
     font-size: 16px;
