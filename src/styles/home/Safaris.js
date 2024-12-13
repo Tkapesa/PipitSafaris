@@ -35,6 +35,10 @@ display: flex;
     flex-direction: column;
     max-width: 600px;
     width: 100%;
+    
+  //   &:hover {
+  //   transform: scale(1.01);
+  // }
     .text-main{
       margin-top:0.75rem;
       color: #000;
@@ -50,13 +54,23 @@ display: flex;
 
 export const Figure = styled.figure`
   margin: 0 0 1rem 0;
+    border-radius: 0.75rem;
+  overflow: hidden;
+ 
 `;
 
 export const Image = styled.img`
   border-radius: 0.75rem;
-  @media screen and (max-width: 767px){
-        height: 119px;
-        width: 238px;
+ transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), height 0.3s ease, width 0.3s ease;
+
+    &:hover{
+       transform: scale(1.1);
+     }
+
+  @media screen and (max-width: 767px) {
+    height: 119px;
+    width: 238px;
+
   }
 `;
 

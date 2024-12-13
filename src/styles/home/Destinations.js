@@ -67,6 +67,17 @@ export const Image = styled.img`
   /* object-fit: ; */
   display: block;
   object-fit: cover;
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.2;
+  }
   @media screen and (max-width: 767px){
     max-width: 100%;
     width: 100%;

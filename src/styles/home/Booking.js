@@ -6,6 +6,7 @@ export const Container = styled.section`
   width: 100%;
   margin: 0 auto 72px auto;
   box-sizing: border-box;
+  
 
   h2 {
     padding: 48px 0;
