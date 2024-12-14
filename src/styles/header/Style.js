@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   left: 0;
   right: 0;
-  background: ${({ theme }) => (theme === 'light' ? '#ffffff' : '#121212')}; /* Light vs Dark */
+  background: ${({ theme }) => (theme === 'light' ? '#ffffff' : '#001730')}; /* Light vs Dark */
   position: fixed;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
   height: 60px;
@@ -61,13 +61,13 @@ export const MenuItems = styled.li`
     color: ${({ theme }) => (theme === 'light' ? '#333' : '#fff')}; /* Text color for menu items */
   }
   &:hover {
-    background: ${({ theme }) => (theme === 'light' ? '#eee' : '#555')}; /* Hover color */
+    /* background: ${({ theme }) => (theme === 'light' ? '#eee' : '#555')};  */
     border-radius: .5rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    color: #fff;
+    color: #FFEA00 !important;
     cursor: pointer;
   }
 
