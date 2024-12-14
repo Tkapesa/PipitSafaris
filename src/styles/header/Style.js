@@ -1,23 +1,24 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-box-sizing: border-box;
-padding: 25px 25px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-position: absolute;
-top: 0px;
-z-index: 99;
-width: 100%;
-margin: 0 auto;
-left: 0;
-right: 0;
-background: #000000a8;
-position: fixed;
-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
-height: 60px; 
-@media (max-width: 768px) {
+  box-sizing: border-box;
+  padding: 25px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0px;
+  z-index: 99;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  background: ${({ theme }) => (theme === 'light' ? '#ffffff' : '#121212')}; /* Light vs Dark */
+  position: fixed;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+  height: 60px;
+
+  @media (max-width: 768px) {
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
@@ -52,12 +53,15 @@ export const MenuList = styled.ul`
 
 export const MenuItems = styled.li`
   padding: 8px 16px;
-  color: #fff;
+  color: ${({ theme }) => (theme === 'light' ? '#333' : '#fff')}; /* Text color for menu items */
   font-size: 14px;
   transition: 0.3s all;
-  border: 1px solid transparent;
-  &:hover{
-    background: #fff3;
+  border: 0px solid transparent;
+  a{
+    color: ${({ theme }) => (theme === 'light' ? '#333' : '#fff')}; /* Text color for menu items */
+  }
+  &:hover {
+    background: ${({ theme }) => (theme === 'light' ? '#eee' : '#555')}; /* Hover color */
     border-radius: .5rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
@@ -86,10 +90,10 @@ export const ButtonsWrapper = styled.div`
 export const ButtonsPrimary = styled.div`
   font-size: 14px;
   padding: 8px 16px;
-  color: #fff;
-  background-color: #fff3;
+  color: ${({ theme }) => (theme === 'light' ? '#333' : '#fff')}; /* Button text color */
+  background-color: ${({ theme }) => (theme === 'light' ? '#ffffff' : '#212121')}; /* Button background color */
   border-radius: .5rem;
-   cursor: pointer;
+  cursor: pointer;
 
   @media (max-width: 768px) {
     font-size: 16px;
@@ -101,7 +105,7 @@ export const ButtonsSecondary = styled.div`
   font-size: 14px;
   padding: 8px 16px;
   color: #fff;
-  background-color: #212121;
+  background-color: ${({ theme }) => (theme === 'light' ? 'transparent' : 'transparent')}; /* Button background color in dark mode */
   border-radius: .5rem;
   cursor: pointer;
 
@@ -124,7 +128,7 @@ export const Hamburger = styled.div`
   div {
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: ${({ theme }) => (theme === 'light' ? '#333' : '#fff')}; /* Hamburger color */
   }
 
   @media (max-width: 768px) {
@@ -136,9 +140,9 @@ export const MobileMenu = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #212121;
+  background-color: ${({ theme }) => (theme === 'light' ? '#ffffff' : '#212121')}; /* Mobile menu background */
   position: absolute;
-  top: 70px; /* Adjust based on header size */
+  top: 70px;
   left: 0;
   width: 100%;
   padding: 20px 0;
@@ -150,5 +154,19 @@ export const MobileMenu = styled.div`
   ${MenuItems} {
     padding: 12px;
     font-size: 18px;
+  }
+`;
+
+export const ThemeToggleButton = styled.button`
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')}; /* Color of the toggle icon */
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.3s ease;
+
+  &:focus {
+    outline: none;
   }
 `;

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { ButtonsPrimary, ButtonsSecondary, ButtonsWrapper, Figure, Logo, MenuItems, MenuList, Wrapper, Image, Hamburger, MobileMenu } from '../styles/header/Style';
+import { ButtonsPrimary, ButtonsSecondary, ButtonsWrapper, Figure, Logo, MenuItems, MenuList, Wrapper, Image, Hamburger, MobileMenu, ThemeToggleButton } from '../styles/header/Style';
 import { Link } from "react-router-dom";
+import { FaMoon, FaSun } from 'react-icons/fa'; // Importing the theme icons
 
-export default function Header() {
+export default function Header({ toggleTheme, theme }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -28,22 +29,27 @@ export default function Header() {
         {/* Menu List */}
         <MenuList>
           <MenuItems><Link to="/trips">Trips</Link></MenuItems>
-          <MenuItems>Hotels & Lodges</MenuItems>
-          <MenuItems>Destinations</MenuItems>
+          <MenuItems><Link to="/hotels">Hotels & Lodges</Link></MenuItems>
+          <MenuItems><Link to="/destinations">Destinations</Link></MenuItems>
         </MenuList>
 
         <ButtonsWrapper>
           <ButtonsPrimary>Find Your Trip</ButtonsPrimary>
           <ButtonsSecondary>Sign in</ButtonsSecondary>
         </ButtonsWrapper>
+
+        {/* Theme Toggle Button */}
+        <ThemeToggleButton onClick={toggleTheme}>
+          {theme === 'light' ? <FaMoon size={20} color="#fff" /> : <FaSun size={20} color="#fff" />}
+        </ThemeToggleButton>
       </Wrapper>
 
       {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
         <MobileMenu>
-          <MenuItems>Trips</MenuItems>
-          <MenuItems>Hotels & Lodges</MenuItems>
-          <MenuItems>Destinations</MenuItems>
+          <MenuItems><Link to="/trips">Trips</Link></MenuItems>
+          <MenuItems><Link to="/hotels">Hotels & Lodges</Link></MenuItems>
+          <MenuItems><Link to="/destinations">Destinations</Link></MenuItems>
         </MobileMenu>
       )}
     </>

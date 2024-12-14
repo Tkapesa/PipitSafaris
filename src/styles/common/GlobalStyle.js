@@ -1,16 +1,44 @@
+// src/styles/common/GlobalStyle.js
+
 import { createGlobalStyle } from 'styled-components';
 
-// Global styles for the font import
 const GlobalStyle = createGlobalStyle`
- @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
   body {
-    font-family: 'Nunito', sans-serif;
+    background-color: ${({ theme }) => theme.background};
+    color: ${({ theme }) => theme.text};
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
-  a{
+  a {
+    color: ${({ theme }) => theme.link};
     text-decoration: none;
-    color: unset;
+  }
+
+  a:hover {
+    color: ${({ theme }) => theme.linkHover};
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: ${({ theme }) => theme.heading};
+  }
+
+  p, span, li {
+    color: ${({ theme }) => theme.spanAndP} !important;
+  }
+
+  strong {
+    color: ${({ theme }) => theme.strong} !important;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  * {
+    border-color: ${({ theme }) => theme.borderColor} !important;
   }
 `;
 
