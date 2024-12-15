@@ -81,11 +81,11 @@ function Terms({theme}) {
             previous trips and saved Listings, Tour Operator requirements (e.g.
             minimum age requirement), and more.
           </Text>
-          <text theme={theme}>
+          <Text theme={theme}>
             Our aim is to provide exactly the right travel arrangements to suit
             your requirements.
-          </text theme={theme}>
-          <text theme={theme}>
+          </Text>
+          <Text theme={theme}>
             When you book a safari service, you are agreeing to pay all charges
             for your booking including the Safari service price, applicable
             fees, CloudSafaris’ service fee, offline fees, taxes, and any other
@@ -93,8 +93,8 @@ function Terms({theme}) {
             are also agreeing that CloudSafaris may charge the Payment Method
             (as defined in the Payment Terms) used to book the Safari Service in
             order to collect Damage Claim (as defined in Section 17) amounts.
-          </text>
-          <text theme={theme}>
+          </Text>
+          <Text theme={theme}>
             When you receive the booking confirmation, a contract for Tour
             Operator Services (a "Reservation") is formed directly between you,
             the Accommodation(s), Transportation Partners, and the Tour
@@ -103,8 +103,8 @@ function Terms({theme}) {
             including without limitation, the cancellation policy and any other
             rules, standards, policies, or requirements identified in the
             Listing or during checkout that apply to the Reservation.
-          </text>
-          <text theme={theme}>
+          </Text>
+          <Text theme={theme}>
             The deposit required to book your trip is shown on your quotation.
             The deposit will be 30% of the total trip price, excepting air
             travel and any permits which need to be paid for in full at time of
@@ -116,8 +116,8 @@ function Terms({theme}) {
             service fee incurred by CloudSafaris and in the event of any
             cancellation as provided for herein the Deposit and any Additional
             Deposit will be forfeited by the Client.
-          </text>
-          <text theme={theme}>
+          </Text>
+          <Text theme={theme}>
             You must make all payments in full and on time. Failure to make a
             payment may result in the cancellation of your travel and the
             forfeiture of your Deposit and any Additional Deposit. In such a
@@ -126,13 +126,13 @@ function Terms({theme}) {
             We reserve the right to refuse service to anyone. In such case, a
             full refund would be provided, and we would have no further
             liability to you.
-          </text>
-          <text theme={theme}>
+          </Text>
+          <Text theme={theme}>
             Your final balance will be due in full three calendar months prior
             to departure. Trips booked within three months of travel require
             full payment at the time of booking.
-          </text>
-          <text theme={theme}>
+          </Text>
+          <Text theme={theme}>
             Payments can be made by bank transfer or by credit or debit card.
             While we do accept major credit cards including Visa, Mastercard and
             American Express, travelers must provide to us a click or signed
@@ -145,19 +145,19 @@ function Terms({theme}) {
             aware that some Tour Operators work with a Co-Tour Operators (other
             Operators) or as part of a team to provide their Tour Operator
             Services.
-          </text>
-          <text theme={theme}>
+          </Text>
+          <Text theme={theme}>
             It is important for you to check the details on the Confirmation
             Invoice as soon as you get it. In the event of any discrepancy
             please contact us immediately at hello@cloudsafaris.com.
             CloudSafaris will be responsible for making payments to Third Party
             Suppliers on confirmed bookings by you on your behalf and remitting
             the booking fee element to the Company.
-          </text>
+          </Text>
           <h4 fontSize="15px" color="black" theme={theme}>
             <strong>2.2.2 Accommodation Reservations</strong>
           </h4>
-          <text theme={theme}>
+          <Text theme={theme}>
             An Accommodation Reservation is a limited license to enter, occupy,
             and use the Accommodation. The Accommodation staff retain the right
             to re-enter the Accommodation during your stay, to the extent: (i)
@@ -168,14 +168,14 @@ function Terms({theme}) {
             reasonable overstay penalties. You may not exceed the maximum number
             of allowed Guests. Accommodation Reservations also extend to the
             hotels, lodges, camps, tented lodges and other housing.
-          </text>
+          </Text>
           <h4 fontSize="15px" color="black" theme={theme}>
             <strong theme={theme}>
               2.2.3 Reservations for Experiences and Other Tour Operator
               Services
             </strong>
           </h4>
-          <text>
+          <Text>
             An Experience or other Tour Operator Service Reservation entitles
             you to participate in, attend, or use that Tour Operator Service.
             You are responsible for confirming that you, and anyone you invite,
@@ -186,11 +186,11 @@ function Terms({theme}) {
             Except where expressly authorized, you may not allow any person to
             join a Tour Operator Service unless they are included as an
             additional guest during the booking process.
-          </text>
+          </Text>
           <h4 fontSize="15px" color="black">
             <strong>2.2.4 Booking Modifications & Amendments.</strong>
           </h4>
-          <text>
+          <Text>
             The Company will make every effort to assist you if you wish to
             alter your arrangements. Guests and Tour Operators are responsible
             for any booking modifications they agree to make via the
@@ -199,14 +199,14 @@ function Terms({theme}) {
             make the amendment, it will be subject to any fees charged by our
             suppliers, together with all communication charges or other expenses
             incurred by the Company as a result of the change.
-          </text>
+          </Text>
           <h4 fontSize="15px" color="black">
             <strong>2.3 Cancellations</strong>
           </h4>
           <h4 fontSize="15px" color="black">
             <strong>2.3.1 Travel Issues, and Refunds</strong>
           </h4>
-          <text>
+          <Text>
             In general, if as a Guest you cancel a Reservation, the amount
             refunded to you is determined by the cancellation policy (as
             determined by CloudSafaris and the Tour Operator) that applies to
@@ -216,17 +216,17 @@ function Terms({theme}) {
             our Guest Refund Policy), you may be eligible for rebooking
             assistance or a partial or full refund pending the circumstance as
             evaluated by CloudSafaris
-          </text>
-          <text>
+          </Text>
+          <Text>
             All cancellations are subject to the Supplier Terms and Conditions
             of the Third Party Suppliers. Some Third Party Suppliers may choose
             to offer future travel credits in lieu of a cash refund. We
             CloudSafaris are not liable for a Third Party Supplier’s failure to
             provide a refund or for Third Party Supplier insolvency or
             bankruptcy.
-          </text>
+          </Text>
           <h3>3. Your Responsibilities and Assumption of Risk.</h3>
-          <text>
+          <Text>
             You are responsible and liable for your own acts and omissions and
             are also responsible for the acts and omissions of anyone you invite
             to join or provide access to any Accommodation, Experience,
@@ -242,8 +242,8 @@ function Terms({theme}) {
             or Transportation Partner, you must be legally authorized to act on
             behalf of the minor and you are solely responsible for the
             supervision of that minor.
-          </text>
-          <text>
+          </Text>
+          <Text>
             You are responsible and liable for your own acts and omissions and
             are also responsible for the acts and omissions of anyone you invite
             to join or provide access to any Accommodation, Experience,
@@ -259,8 +259,8 @@ function Terms({theme}) {
             or Transportation Partner, you must be legally authorized to act on
             behalf of the minor and you are solely responsible for the
             supervision of that minor.
-          </text>
-          <text>
+          </Text>
+          <Text>
             You are responsible and liable for your own acts and omissions and
             are also responsible for the acts and omissions of anyone you invite
             to join or provide access to any Accommodation, Experience,
@@ -276,7 +276,7 @@ function Terms({theme}) {
             or Transportation Partner, you must be legally authorized to act on
             behalf of the minor and you are solely responsible for the
             supervision of that minor.
-          </text>
+          </Text>
 
           <List>
             <ListItems>
@@ -320,7 +320,7 @@ function Terms({theme}) {
             </ListItems>
           </List>
           <h3>The Entire Contact</h3>
-          <text>
+          <Text>
             The Conditions (together with all enquiries, advice, quotations, or
             estimates addressed to, provided by or bookings made, and
             indemnities signed and the Company's Privacy Policy) constitute
@@ -334,7 +334,7 @@ function Terms({theme}) {
             the interpretation of the Conditions. The Company reserves the right
             to revise these conditions from time to time - each revision will be
             dated and posted on its website.
-          </text>
+          </Text>
         </Left>
 
         <Right>
@@ -347,7 +347,7 @@ function Terms({theme}) {
               focusable="false"
               data-prefix="fas"
               data-icon="chevron-right"
-              className="svg-inline--fa fa-chevron-right text-sm"
+              className="svg-inline--fa fa-chevron-right Text-sm"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 320 512"

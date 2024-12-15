@@ -9,7 +9,10 @@ export const Container = styled.section`
   padding: 128px 0px;
   margin: 8rem auto;
   box-sizing: border-box;
-  background-color: #f6f6f6;
+  /* background-color: #f6f6f6; */
+
+ background: ${(props) => (props.theme === 'dark' ? '#121212' : '#f6f6f6')};
+
 
   @media (max-width: 1024px) {
     padding: 80px 20px;
@@ -62,7 +65,8 @@ export const Top = styled.div`
 
 export const H2 = styled.h2`
   font-size: 36px;
-  color: #000;
+  /* color: #000; */
+    color: ${(props) => (props.theme === 'dark' ? '#fff' : '#000')};
 
   @media (max-width: 1024px) {
     font-size: 30px;
@@ -79,7 +83,8 @@ export const H2 = styled.h2`
 
 export const Text = styled.p`
   font-size: 16px;
-  color: #454545;
+  /* color: #454545; */
+  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#454545')};
 
   @media (max-width: 768px) {
     font-size: 14px;
@@ -169,7 +174,9 @@ export const Image = styled.img`
 
 export const H4 = styled.h4`
   font-size: 20px;
-  color: #000;
+  /* color: #000; */
+  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#000')};
+
   padding-top: 8px;
   margin: 0px;
 
@@ -184,7 +191,9 @@ export const H4 = styled.h4`
 
 export const Strong = styled.strong`
   font-size: 16px;
-  color: #000;
+  /* color: #000; */
+  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#000')};
+
   font-weight: 500;
 
   @media (max-width: 768px) {
@@ -198,7 +207,8 @@ export const Strong = styled.strong`
 
 export const Paper = styled.span`
   font-size: 14px;
-  color: #5c5c5c;
+  /* color: #5c5c5c; */
+  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#5c5c5c')};
 
   @media (max-width: 768px) {
     font-size: 12px;

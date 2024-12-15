@@ -19,12 +19,16 @@ export const Container = styled.section`
 
 export const H2 = styled.h2`
   font-size: 36px;
-  color: #000;
+  /* color: #000; */
+  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#000')};
+
 `;
 
 export const Text = styled.p`
   font-size: 16px;
-  color: #454545;
+  /* color: #454545; */
+  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#454545')};
+
 `;
 
 export const Wrapper = styled.div`
@@ -56,10 +60,14 @@ export const Icon = styled.div`
 
 export const Strong = styled.strong`
   font-size: 18px;
-  color: #212121;
+  /* color: #212121; */
+  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#212121')};
+
 `;
 
 export const Paper = styled.span`
   font-size: 16px;
-  color: #737373;
+  /* color: #737373; */
+  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#737373')};
+
 `;

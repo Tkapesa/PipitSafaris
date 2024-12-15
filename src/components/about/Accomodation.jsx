@@ -7,16 +7,16 @@ import {
     Wrapper,
   } from "../../styles/about/Accomodation";
   
-  function Accomodation() {
+  function Accomodation({theme}) {
     return (
       <>
-        <Container>
-          <Wrapper>
-            <H2>
+        <Container theme={theme}>
+          <Wrapper theme={theme}>
+            <H2 theme={theme}>
               Our accommodation partners<br></br> have been featured in...
             </H2>
-            <Box>
-              <Figure>
+            <Box theme={theme}>
+              <Figure theme={theme}>
                 <Image
                   src="https://static.cloudsafaris.com/public/TheNewYorkTimes.png?action=get"
                   alt=""

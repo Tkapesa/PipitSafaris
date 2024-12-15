@@ -107,7 +107,8 @@ export const List = styled.ul`
 export const ListItems = styled.li`
   padding: 0px;
   margin: 0px;
-  color: #454545;
+  /* color: #454545; */
+  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#454545')};
   font-size: 1rem;
   line-height: 1.5rem;
   
@@ -135,7 +136,8 @@ export const InnerDot = styled.div`
 `;
 
 export const Strong = styled.strong`
-  color: #212121;
+  /* color: #212121; */
+  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#212121')};
   font-size: 16px;
 `;
 
@@ -145,7 +147,8 @@ export const Strong = styled.strong`
 
 export const Button = styled.button`
   font-size: 16px;
-  color: #4a7454;
+  /* color: #4a7454; */
+  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#4a7454')};
   background: #e4ede6;
   padding: 6px 16px;
   border-radius: 999px;
@@ -168,7 +171,8 @@ export const Button = styled.button`
 
 export const H2 = styled.h2`
   font-size: 36px;
-  color: #000;
+  /* color: #000; */
+  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#000')};
   display: flex;
 
   @media (max-width: 1200px) {
@@ -190,7 +194,8 @@ export const H2 = styled.h2`
 
 export const H3 = styled.h2`
   font-size: 20px;
-  color: #000;
+  /* color: #000; */
+  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#000')};
   display: flex;
 
   @media (max-width: 768px) {
@@ -204,7 +209,8 @@ export const H3 = styled.h2`
 
 export const Text = styled.p`
   font-size: 16px;
-  color: #454545;
+  /* color: #454545; */
+  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#454545')};
 
   @media (max-width: 768px) {
     font-size: 14px;
@@ -221,13 +227,16 @@ export const ButtonBlack = styled.button`
  line-height: 1.25rem;
  text-align: center;
  padding: 1rem;
- background: #212121;
+ /* background: #212121; */
  border-radius: .375rem;
  justify-content: center;
  width: fit-content;
  display: flex;
  font-weight: 600;
  gap: .5rem;
+ color: ${(props) => (props.theme === 'dark' ? '#000' : '#fff')};
+ background: ${(props) => (props.theme === 'dark' ? '#FFEA00' : '#212121')};
+
 `;
 
 export const Right = styled.div`

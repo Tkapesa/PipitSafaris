@@ -10,13 +10,13 @@ import {
   Wrapper,
 } from "../../styles/about/Perks";
 
-function Perks() {
+function Perks({theme}) {
   return (
     <>
-      <Container>
-        <Button>Our perks</Button>
-        <H2>Secure, safe, valuable - our standard.</H2>
-        <Text>
+      <Container theme={theme}>
+        <Button >Our perks</Button>
+        <H2 theme={theme}>Secure, safe, valuable - our standard.</H2>
+        <Text theme={theme}>
           We are all about bringing safaris into the modern era. We understand
           that planning a trip should be exciting, not stressful. That's why
           we're committed to ensuring our travelers feel safe, trust us
@@ -26,7 +26,7 @@ function Perks() {
           forward to an unforgettable safari experience with peace of mind.
         </Text>
         <Wrapper>
-          <Box>
+          <Box theme={theme}>
             <Icon>
               <svg
                 aria-hidden="true"
@@ -44,8 +44,8 @@ function Perks() {
                 ></path>
               </svg>
             </Icon>
-            <Strong>Secure payments</Strong>
-            <Paper>Pay securely online with sensible desposits.</Paper>
+            <Strong theme={theme}>Secure payments</Strong>
+            <Paper theme={theme}>Pay securely online with sensible desposits.</Paper>
           </Box>
           <Box>
             <Icon>
@@ -65,8 +65,8 @@ function Perks() {
                 ></path>
               </svg>
             </Icon>
-            <Strong>Secure payments</Strong>
-            <Paper>Pay securely online with sensible desposits.</Paper>
+            <Strong theme={theme}>Secure payments</Strong>
+            <Paper theme={theme}>Pay securely online with sensible desposits.</Paper>
           </Box>
           <Box>
             <Icon>
@@ -86,8 +86,8 @@ function Perks() {
                 ></path>
               </svg>
             </Icon>
-            <Strong>Secure payments</Strong>
-            <Paper>Pay securely online with sensible desposits.</Paper>
+            <Strong theme={theme}>Secure payments</Strong>
+            <Paper theme={theme}>Pay securely online with sensible desposits.</Paper>
           </Box>
           <Box>
             <Icon>
@@ -107,8 +107,8 @@ function Perks() {
                 ></path>
               </svg>
             </Icon>
-            <Strong>Secure payments</Strong>
-            <Paper>Pay securely online with sensible desposits.</Paper>
+            <Strong theme={theme}>Secure payments</Strong>
+            <Paper theme={theme}>Pay securely online with sensible desposits.</Paper>
           </Box>
           <Box>
             <Icon>
@@ -128,8 +128,8 @@ function Perks() {
                 ></path>
               </svg>
             </Icon>
-            <Strong>Secure payments</Strong>
-            <Paper>Pay securely online with sensible desposits.</Paper>
+            <Strong theme={theme}>Secure payments</Strong>
+            <Paper theme={theme}>Pay securely online with sensible desposits.</Paper>
           </Box>
           <Box>
             <Icon>
@@ -149,8 +149,8 @@ function Perks() {
                 ></path>
               </svg>
             </Icon>
-            <Strong>Secure payments</Strong>
-            <Paper>
+            <Strong theme={theme}>Secure payments</Strong>
+            <Paper theme={theme}>
               Tailor your safari to match your interests – from wildlife
               spotting to cultural tours, create the adventure you've dreamed
               of.

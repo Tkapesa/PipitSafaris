@@ -20,35 +20,35 @@ import {
     Wrapper,
   } from "../../styles/about/BookTrip";
   
-  function BookTrip() {
+  function BookTrip({theme}) {
     return (
       <>
-        <Container>
+        <Container theme={theme}>
           <Left>
             <Button>Booking a trip</Button>
-            <H2>We'll take care of the details. You enjoy the trip.</H2>
-            <Text>
+            <H2 theme={theme}>We'll take care of the details. You enjoy the trip.</H2>
+            <Text theme={theme}>
               At CloudSafaris, we saw an issue in the safari industry: an outdated
               booking experience. This became evident by a lack of online
               information and excessive time taken to go from a dream to a
               reality. Our goal was to modernize this process and enhance the
               customer experience.
             </Text>
-            <H3>How it works</H3>
+            <H3 theme={theme}>How it works</H3>
             <Wrapper>
               <Top>
                 <Div>
                   <Dot>
                     <InnerDot></InnerDot>
                   </Dot>
-                  <Strong>Choose your safari</Strong>
+                  <Strong theme={theme}>Choose your safari</Strong>
                 </Div>
                 <InnerWrapper>
-                <Strong>Select dates that are most convenient for you.</Strong>
+                <Strong theme={theme}>Select dates that are most convenient for you.</Strong>
                   <List>
-                    <ListItems>All accommodations, transfers, food, and guides are included</ListItems>
-                    <ListItems>Tailor the trip with activities of your choice</ListItems>
-                    <ListItems>
+                    <ListItems theme={theme}>All accommodations, transfers, food, and guides are included</ListItems>
+                    <ListItems theme={theme}>Tailor the trip with activities of your choice</ListItems>
+                    <ListItems theme={theme}>
                     Select from an extensive list of incredible properties</ListItems>
                   </List>
                 </InnerWrapper>
@@ -64,14 +64,14 @@ import {
                   <Dot>
                     <InnerDot></InnerDot>
                   </Dot>
-                  <Strong>Pick your dates</Strong>
+                  <Strong theme={theme}>Pick your dates</Strong>
                 </Div>
                 <InnerWrapper>
-                <Strong>Select dates that are most convenient for you.</Strong>
+                <Strong theme={theme}>Select dates that are most convenient for you.</Strong>
                   <List>
-                    <ListItems>All accommodations, transfers, food, and guides are included</ListItems>
-                    <ListItems>Tailor the trip with activities of your choice</ListItems>
-                    <ListItems>
+                    <ListItems theme={theme}>All accommodations, transfers, food, and guides are included</ListItems>
+                    <ListItems theme={theme}>Tailor the trip with activities of your choice</ListItems>
+                    <ListItems theme={theme}>
                     Select from an extensive list of incredible properties</ListItems>
                   </List>
                 </InnerWrapper>
@@ -86,19 +86,19 @@ import {
                   <Dot>
                     <InnerDot></InnerDot>
                   </Dot>
-                  <Strong>Confirm and enjoy</Strong>
+                  <Strong theme={theme}>Confirm and enjoy</Strong>
                 </Div>
                 <InnerWrapper>
-                <Strong>Confirm your trip with our safari professionals.</Strong>
+                <Strong theme={theme}>Confirm your trip with our safari professionals.</Strong>
                   <List>
-                    <ListItems>Receive a complimentary personal trip briefing</ListItems>
-                    <ListItems>Pay securely by credit card</ListItems>
-                    <ListItems>Travel confidently with on-ground support</ListItems>
+                    <ListItems theme={theme}>Receive a complimentary personal trip briefing</ListItems>
+                    <ListItems theme={theme}>Pay securely by credit card</ListItems>
+                    <ListItems theme={theme}>Travel confidently with on-ground support</ListItems>
                   </List>
                 </InnerWrapper>
                 
               </Top>
-              <ButtonBlack>Book a trip</ButtonBlack>
+              <ButtonBlack theme={theme}>Book a trip</ButtonBlack>
             </Wrapper>
           </Left>
           <Right>

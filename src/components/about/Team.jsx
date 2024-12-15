@@ -14,15 +14,15 @@ import {
   Wrapper,
 } from "../../styles/about/Team";
 
-function Team() {
+function Team({theme}) {
   return (
     <>
-      <Container>
-        <Wrapper>
-          <Top>
+      <Container theme={theme}>
+        <Wrapper theme={theme}>
+          <Top theme={theme}>
             <Button>Our team</Button>
-            <H2>Meet the founding members</H2>
-            <Text>
+            <H2 theme={theme}>Meet the founding members</H2>
+            <Text theme={theme}>
               Encounter the people who started our journey. Our founders are a
               blend of diverse experiences and passions, each contributing to
               the unique tapestry of our community. It's their personal stories,
@@ -39,9 +39,9 @@ function Team() {
                   hright={400}
                 />
               </Figure>
-              <H4>Josh D'Souza</H4>
-              <Strong>CEO</Strong>
-              <Paper>A graduate from the University of Waterloo...</Paper>
+              <H4 theme={theme}>Josh D'Souza</H4>
+              <Strong theme={theme}>CEO</Strong>
+              <Paper theme={theme}>A graduate from the University of Waterloo...</Paper>
             </Box>
 
             <Box>
@@ -53,9 +53,9 @@ function Team() {
                   hright={400}
                 />
               </Figure>
-              <H4>Josh D'Souza</H4>
-              <Strong>CEO</Strong>
-              <Paper>A graduate from the University of Waterloo...</Paper>
+              <H4 theme={theme}>Josh D'Souza</H4>
+              <Strong theme={theme}>CEO</Strong>
+              <Paper theme={theme}>A graduate from the University of Waterloo...</Paper>
             </Box>
 
             <Box>
@@ -67,9 +67,9 @@ function Team() {
                   hright={400}
                 />
               </Figure>
-              <H4>Josh D'Souza</H4>
-              <Strong>CEO</Strong>
-              <Paper>A graduate from the University of Waterloo...</Paper>
+              <H4 theme={theme}>Josh D'Souza</H4>
+              <Strong theme={theme}>CEO</Strong>
+              <Paper theme={theme}>A graduate from the University of Waterloo...</Paper>
             </Box>
           </Bottom>
         </Wrapper>

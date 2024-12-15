@@ -8,7 +8,9 @@ export const Container = styled.section`
   flex-direction: column;
   margin: 0 auto;
   padding: 64px 0px;
-  background: #f6f6f6;
+  /* background: #f6f6f6; */
+  background: ${(props) => (props.theme === 'dark' ? '#001730' : '#f6f6f6')};
+ 
   box-sizing: border-box;
 
   @media (max-width: 1024px) {
