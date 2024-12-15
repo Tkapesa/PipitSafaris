@@ -11,6 +11,7 @@ export const Container = styled.section`
   h2 {
     padding: 48px 0;
     font-size: 30px;
+    color: ${(props) => (props.theme === 'dark' ? '#fff' : '#212121')};
   }
 
   @media screen and (max-width: 767px){

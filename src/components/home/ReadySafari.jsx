@@ -7,7 +7,7 @@ export default function ReadySafari() {
     <>
     <Container>
         <Wrapper>
-            <H2 fontSize="60px" color="#fff">Ready for a <br/> safari?</H2>
+            <H2 fontSize="60px" color='#fff' className='heading'>Ready for a <br/> safari?</H2>
             <Button variant="primary">Start here</Button>
         </Wrapper>
     </Container>

@@ -64,11 +64,12 @@ export const Image = styled.img`
   max-width: 292px;
   width: 100%;
   height: 438px;
-  /* object-fit: ; */
   display: block;
   object-fit: cover;
   position: relative;
-  &::after{
+  
+  /* Overlay effect */
+  &::after {
     content: "";
     position: absolute;
     top: 0;
@@ -78,13 +79,22 @@ export const Image = styled.img`
     background-color: #000000;
     opacity: 0.2;
   }
-  @media screen and (max-width: 767px){
+
+  /* Media query for responsiveness */
+  @media screen and (max-width: 767px) {
     max-width: 100%;
     width: 100%;
     max-height: 357px;
   }
 
+  /* Hover effect with glow and scale */
+  &:hover {
+    box-shadow: 0px 12px 30px rgba(25, 75, 115, 0.5); /* Stronger shadow on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  }
 `;
+
 
 export const Strong = styled.strong`
     font-size: 1.5rem;
@@ -150,10 +160,32 @@ export const Div = styled.div`
     display: flex;
     flex-direction: column;
     padding-top: 300px;
-    @media screen and (max-width: 767px){
-      padding-top: 240px;
+    position: relative;
+    border-radius: 15px; /* Add border-radius for rounded corners */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    
+    @media screen and (max-width: 767px) {
+        padding-top: 240px;
     }
 
+    /* Overlay with gradient color and opacity */
+    &::before {
+        content: ''; /* Required for the pseudo-element */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to bottom, rgba(25, 75, 115, 0.8), rgba(25, 75, 115, 0)); /* Gradient overlay */
+        opacity: 0.6; /* Slight opacity */
+        z-index: -1; /* Position the overlay behind the content */
+        border-radius: 15px; /* Match border radius for overlay */
+    }
+
+ 
 `;
+
+
 
 

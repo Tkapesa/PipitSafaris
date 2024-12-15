@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 // Footer Wrapper
 export const Wrapper = styled.footer`
-  background-color: ${(props) => (props.theme === 'dark' ? '#121212' : '#e8e8e8')}; /* Dark mode background */
+  background-color: ${(props) => (props.theme === 'dark' ? '#121212' : '#001730')}; /* Dark mode background */
   padding: 64px 32px 32px;
   font-size: 16px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#333')}; /* Light text for dark mode */
+  color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#fff')}; /* Light text for dark mode */
 `;
 
 export const Box = styled.div`
@@ -45,6 +45,9 @@ export const Main = styled.div`
   gap: 32px;
   max-width: 176px;
   width: 100%;
+  p{
+    color: #fff !important;
+  }
   &:nth-child(1){
     max-width: 383px;
     width: 100%;
@@ -69,6 +72,9 @@ export const Wrape = styled.div`
 export const LWraper = styled.div`
   max-width: 176px;
   width: 100%;
+  h3{
+    color: #fff !important;
+  }
 `;
 
 export const List = styled.ul`
@@ -81,15 +87,22 @@ export const List = styled.ul`
 `;
 
 export const ListItems = styled.li`
-  color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#5c5c5c')}; /* Softer text in dark mode */
+  color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#fff')}; /* Softer text in dark mode */
+  a{
+    color: #fff;
+  }
 `;
 
 export const CopyRight = styled.div`
-  color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#5c5c5c')}; /* Adjusted color for dark mode */
+  color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#fff')}; /* Adjusted color for dark mode */
   max-width: 1240px;
   width: 100%;
   margin: 0 auto;
   p {
-    color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#5c5c5c')}; /* Darker text in dark mode */
+    color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#fff')} !important; /* Darker text in dark mode */
   }
+`;
+
+export const Text = styled.p`
+color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#fff')} !important; /* Darker text in dark mode */
 `;

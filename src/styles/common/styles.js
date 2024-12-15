@@ -22,7 +22,7 @@ export const H1 = styled.h1`
 
 export const H2 = styled.h2`
   font-size: ${props => props.fontSize || '100px'};  // Default size is 100px if no prop is provided
-  color: ${props => props.color || '#5c5c5c'};  // Default color is white if no prop is provided
+  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#fff')}; /* Light text for dark mode */
   padding: 0px;
   margin: 0px;
   line-height:0.99;

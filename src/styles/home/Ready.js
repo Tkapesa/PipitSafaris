@@ -42,6 +42,9 @@ export const Wrapper = styled.div`
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+    .heading{
+        color: #fff !important;
+    }
 
     @media (max-width: 1100px) {
         padding: 0px 24px;

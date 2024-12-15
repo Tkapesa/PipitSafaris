@@ -76,6 +76,11 @@ export const Image = styled.img`
 
 export const Strong = styled.strong`
 display: block;
+transition: 0.3s ease all;
+&:hover{
+  color:#194b73;
+  cursor: pointer;
+}
 @media screen and (max-width: 767px){
   font-size: 14px;
 }
@@ -118,13 +123,18 @@ export const ListItems = styled.li`
 export const Wrapper = styled.div``;
 export const PriceWrapper = styled.div`
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 7px;
     padding-top: 12px;
+    @media screen and (max-width: 767px){
+      flex-direction: row;
+    }
     p{
       @media screen and (max-width: 767px){
         font-size: 12px;
+        
       }
     }
      

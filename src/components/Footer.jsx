@@ -1,6 +1,6 @@
 import React from 'react';
 import { Figure, H3, Direction, P } from '../styles/common/styles';
-import { InnerBox, Wrapper, Box, Div, Image, Wrape, Main, LWraper, List, ListItems, CopyRight } from '../styles/footer/style';
+import { InnerBox, Wrapper, Box, Div, Image, Wrape, Main, LWraper, List, ListItems, CopyRight, Text } from '../styles/footer/style';
 import { Link } from "react-router-dom";
 
 export default function Footer({ theme }) {
@@ -38,7 +38,7 @@ export default function Footer({ theme }) {
             <Figure>
               <Image src='https://cloudsafaris.com/tico-coloured.png' alt='' width={75} height={80} />
             </Figure>
-            <Link style={{ marginTop: '-32px' }}>TICO Registration #: 50027812 (Retail), 50027813 (Wholesale)</Link>
+            <Link style={{ marginTop: '-32px' }}><Text>TICO Registration #: 50027812 (Retail), 50027813 (Wholesale)</Text></Link>
           </Main>
           <LWraper theme={theme}>
             <H3 theme={theme}>General</H3>
