@@ -6,15 +6,15 @@ import Safaris from "../components/home/Safaris";
 import Climbs from "../components/home/Climbs";
 import Destinations from "../components/home/Destinations";
 
-export default function HomePage() {
+export default function HomePage({theme}) {
   return (
     <>
-      <Hero />
-      <Safaris />
-      <Climbs />
-      <Destinations/>
-      <Booking />
-      <ReadySafari />
+      <Hero theme={theme} />
+      <Safaris theme={theme}/>
+      <Climbs theme={theme}/>
+      <Destinations theme={theme}/>
+      <Booking theme={theme}/>
+      <ReadySafari theme={theme}/>
     </>
   );
 }

@@ -19,7 +19,7 @@ import {
   Text,
 } from "../../styles/home/Safaris";
 
-function Safaris() {
+function Safaris({theme}) {
   const [tourData, setTourData] = useState(Data);
 
   if (!tourData) {
@@ -62,13 +62,13 @@ function Safaris() {
   };
 
   return (
-    <Container>
-      <H2>Safaris</H2>
+    <Container theme={theme}>
+      <H2 theme={theme}>Safaris</H2>
       <BoxWrapper>
         {tourData.length > 0 ? (
           <Slider {...settings}>
             {tourData.map((tour, index) => (
-              <Box key={index}>
+              <Box key={index} theme={theme}>
                 <Figure>
                   <Image
                     src={tour.imageSrc}
@@ -77,32 +77,32 @@ function Safaris() {
                     height={364}
                   />
                 </Figure>
-                <Strong className='inner-head'>{tour.title}</Strong>
-                <Paper>{tour.location}</Paper>
-                <Text>{tour.operator}</Text>
-                <Text className="text-main">{tour.description}</Text>
-                <List>
+                <Strong className='inner-head' theme={theme}>{tour.title}</Strong>
+                <Paper theme={theme}>{tour.location}</Paper>
+                <Text theme={theme}>{tour.operator}</Text>
+                <Text className="text-main" theme={theme}>{tour.description}</Text>
+                <List theme={theme}>
                   {tour.highlights && tour.highlights.length > 0 ? (
                     tour.highlights.map((highlight, index) => (
-                      <ListItems key={index}>{highlight}</ListItems>
+                      <ListItems key={index} theme={theme}>{highlight}</ListItems>
                     ))
                   ) : (
-                    <Text>No highlights available</Text>
+                    <Text theme={theme}>No highlights available</Text>
                   )}
                 </List>
-                <PriceWrapper>
-                  <Text>Starting at</Text>
-                  <Price>
-                    <Strong>${tour.price}</Strong>
-                    <Strong>{tour.currency}</Strong>
-                    <Paper>{tour.priceDescription}</Paper>
+                <PriceWrapper theme={theme}>
+                  <Text theme={theme}>Starting at</Text>
+                  <Price theme={theme}>
+                    <Strong theme={theme}>${tour.price}</Strong>
+                    <Strong theme={theme}>{tour.currency}</Strong>
+                    <Paper theme={theme}>{tour.priceDescription}</Paper>
                   </Price>
                 </PriceWrapper>
               </Box>
             ))}
           </Slider>
         ) : (
-          <div>No tours available</div>
+          <div theme={theme}>No tours available</div>
         )}
       </BoxWrapper>
     </Container>

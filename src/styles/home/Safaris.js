@@ -16,10 +16,29 @@ export const Container = styled.section`
   
 `;
 
+// export const H2 = styled.h2`
+//   font-size: 36px;
+//   padding: 4px 0px;
+//   margin-bottom: 1.5rem;
+//   color: ${(props) => (props.theme === 'dark' ? '#fff' : '#11181C')} !important;
+
+// `;
+
 export const H2 = styled.h2`
   font-size: 36px;
   padding: 4px 0px;
   margin-bottom: 1.5rem;
+  /* color: ${(props) => (props.theme === 'dark' ? '#fff' : '#11181C')} !important; */
+  background-image: ${(props) =>
+    props.theme === 'dark'
+      ? 'linear-gradient(to right, #3b82f6, #10b981)' // Gradient for dark theme
+      : 'linear-gradient(to right, #3b82f6, #10b981)' // Gradient for light theme (same gradient or customize further)
+  };
+  background-clip: text; // Ensures the gradient is applied to the text
+  -webkit-background-clip: text; // For cross-browser support
+  color: transparent; // Makes the text itself transparent so the gradient shows through
+  font-weight: bold; // Optional: makes the text bolder
+  color: transparent;
 `;
 
 export const BoxWrapper = styled.div`
@@ -37,6 +56,7 @@ display: flex;
     width: 100%;
   .inner-heading{
     color: ${(props) => (props.theme === 'dark' ? '#fff' : '#212121')} !important;
+    
     &:hover{
       color: #194b73;
     }
