@@ -77,7 +77,7 @@ function Climbs() {
                     height={364}
                   />
                 </Figure>
-                <Strong>{tour.title}</Strong>
+                <Strong className='inner-heading'>{tour.title}</Strong>
                 <Paper>{tour.location}</Paper>
                 <Text>{tour.operator}</Text>
                 <Text className="text-main">{tour.description}</Text>

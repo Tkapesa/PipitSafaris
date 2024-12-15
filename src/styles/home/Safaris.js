@@ -35,13 +35,15 @@ display: flex;
     flex-direction: column;
     max-width: 600px;
     width: 100%;
-    
-  //   &:hover {
-  //   transform: scale(1.01);
-  // }
+  .inner-heading{
+    color: ${(props) => (props.theme === 'dark' ? '#fff' : '#212121')} !important;
+    &:hover{
+      color: #194b73;
+    }
+  }
     .text-main{
       margin-top:0.75rem;
-      color: #000;
+      /* color: #000; */
       @media screen and (max-width: 767px){
         font-size: 12px;
       }
@@ -77,6 +79,8 @@ export const Image = styled.img`
 export const Strong = styled.strong`
 display: block;
 transition: 0.3s ease all;
+color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#737373')};
+
 &:hover{
   color:#194b73;
   cursor: pointer;
@@ -87,15 +91,16 @@ transition: 0.3s ease all;
 `;
 
 export const Paper = styled.span`
-
+color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#737373')};
 `;
 
 export const Text = styled.p`
   font-size: 0.875rem;
   line-height: 1.25rem;
-  color: #737373;
+  color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#737373')};
   &:nth-child(2){
     color: #000;
+    /* color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#000')}; */
   }
 `;
 
@@ -115,9 +120,13 @@ export const ListItems = styled.li`
   padding-bottom: 0.25rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  border: 1px solid #e8e8e8;
+  border: 1px solid ${(props) => (props.theme === 'dark' ? '#737373' : '#737373')}; /* Dynamic border color */
+  color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#737373')}; /* Text color for dark/light mode */
   border-radius: 9999px;
-  color: #000;
+  &:hover{
+    cursor: pointer;
+  }
+ 
 `;
 
 export const Wrapper = styled.div``;

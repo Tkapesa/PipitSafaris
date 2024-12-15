@@ -80,7 +80,7 @@ export const Direction = styled.a`
 // Define a reusable button component
 export const Button = styled.button`
   background-color: ${(props) => 
-    props.variant === 'primary' ? '#ffffffe6' : 
+    props.variant === 'primary' ? '#FFEA00' : 
     props.variant === 'secondary' ? '#008CBA' : '#f44336'};
     color: ${(props) => props.variant === 'primary' ? '#212121' : 'black'};
     padding: 12px 24px;

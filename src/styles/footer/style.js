@@ -75,6 +75,9 @@ export const LWraper = styled.div`
   h3{
     color: #fff !important;
   }
+  .heading-footer{
+    color: #fff !important;
+  }
 `;
 
 export const List = styled.ul`

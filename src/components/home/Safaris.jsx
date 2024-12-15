@@ -77,7 +77,7 @@ function Safaris() {
                     height={364}
                   />
                 </Figure>
-                <Strong>{tour.title}</Strong>
+                <Strong className='inner-head'>{tour.title}</Strong>
                 <Paper>{tour.location}</Paper>
                 <Text>{tour.operator}</Text>
                 <Text className="text-main">{tour.description}</Text>

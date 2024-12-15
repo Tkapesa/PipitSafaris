@@ -41,7 +41,7 @@ export default function Footer({ theme }) {
             <Link style={{ marginTop: '-32px' }}><Text>TICO Registration #: 50027812 (Retail), 50027813 (Wholesale)</Text></Link>
           </Main>
           <LWraper theme={theme}>
-            <H3 theme={theme}>General</H3>
+            <H3 theme={theme} className='heading-footer'>General</H3>
             <List theme={theme}>
               <ListItems theme={theme}><Link to="/trips">Trips</Link></ListItems>
               <ListItems theme={theme}>Hotels & Lodges</ListItems>
@@ -51,21 +51,21 @@ export default function Footer({ theme }) {
             </List>
           </LWraper>
           <LWraper theme={theme}>
-            <H3 theme={theme}>Company</H3>
+            <H3 theme={theme} className='heading-footer'>Company</H3>
             <List theme={theme}>
               <ListItems theme={theme}><Link to="/blog">Blog</Link></ListItems>
               <ListItems theme={theme}><Link to="/about">About Us</Link></ListItems>
             </List>
           </LWraper>
           <LWraper theme={theme}>
-            <H3 theme={theme}>Support</H3>
+            <H3 theme={theme} className='heading-footer'>Support</H3>
             <List theme={theme}>
               <ListItems theme={theme}><Link to="/terms">Terms of Service</Link></ListItems>
               <ListItems theme={theme}><Link to="/privacy">Privacy Policy</Link></ListItems>
             </List>
           </LWraper>
           <LWraper theme={theme}>
-            <H3 theme={theme}>Contact Us</H3>
+            <H3 theme={theme} className='heading-footer'>Contact Us</H3>
             <List theme={theme}>
               <ListItems theme={theme}>hello@cloudsafaris.com</ListItems>
               <ListItems theme={theme}>4230 Sherwoodtowne Blvd, Mississauga, ON L4Z 2G6</ListItems>
