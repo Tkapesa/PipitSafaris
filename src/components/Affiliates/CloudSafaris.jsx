@@ -1,12 +1,12 @@
 import React from 'react'
 import { Button, Container, H2 } from '../../styles/Affiliates/CloudSafaris'
 
-export default function CloudSafaris() {
+export default function CloudSafaris({theme}) {
   return (
     <>
-        <Container>
-            <H2>Become a CloudSafaris Affiliate</H2>
-            <Button>Apply Now </Button>
+        <Container theme={theme}>
+            <H2 theme={theme}>Become a CloudSafaris Affiliate</H2>
+            <Button theme={theme}>Apply Now </Button>
         </Container>
     </>
   )

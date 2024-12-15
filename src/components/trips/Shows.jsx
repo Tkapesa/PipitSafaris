@@ -2,12 +2,12 @@ import React from 'react'
 import { Container, Wrapper } from '../../styles/trips/Shows'
 import TripBox from './TripBox'
 
-export default function Shows() {
+export default function Shows({theme}) {
     return (
         <>
-            <Container>
-                <Wrapper>
-                    <TripBox />
+            <Container theme={theme}>
+                <Wrapper theme={theme}>
+                    <TripBox theme={theme}/>
                 </Wrapper>
             </Container>
         </>

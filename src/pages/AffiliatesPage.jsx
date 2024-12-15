@@ -5,14 +5,14 @@ import Benefits from '../components/Affiliates/Benefits'
 import Faqs from '../components/Affiliates/Faqs'
 import CloudSafaris from '../components/Affiliates/CloudSafaris'
 
-export default function AffiliatesPage() {
+export default function AffiliatesPage({theme}) {
   return (
     <>
-      <Exclusive/>
-      <BackGround/>
-      <Benefits/>
-      <Faqs/>
-      <CloudSafaris/>
+      <Exclusive theme={theme}/>
+      <BackGround theme={theme}/>
+      <Benefits theme={theme}/>
+      <Faqs theme={theme}/>
+      <CloudSafaris theme={theme}/>
     </>
   )
 }

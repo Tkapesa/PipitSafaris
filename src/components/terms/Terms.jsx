@@ -11,18 +11,18 @@ import {
   Button,
 } from "../../styles/terms/Style.js";
 
-function Terms() {
+function Terms({theme}) {
   return (
     <>
-      <Container>
-        <Left>
-          <H2>Terms of Service</H2>
-          <strong>
+      <Container theme={theme}>
+        <Left theme={theme}>
+          <H2 theme={theme}>Terms of Service</H2>
+          <strong theme={theme}>
             Section 25 of these Terms contains an arbitration agreement and
             class action waiver that apply to all claims brought against
             CloudSafaris in Canada. Please read them carefully.
           </strong>
-          <Text>
+          <Text theme={theme}>
             These Terms of Service (“Terms”) are a binding legal agreement
             between you and CloudSafari Inc. (CloudSafaris Canada) that govern
             your right to use the websites, applications, and other offerings
@@ -30,7 +30,7 @@ function Terms() {
             When used in these Terms, “CloudSafaris,” “we,” “us,” or “our”
             refers to CloudSafari Inc. with whom you are contracting.
           </Text>
-          <Text>
+          <Text theme={theme}>
             The CloudSafaris Platform offers an online venue that enables users
             (“Members”) to publish, offer, search for, and book services.
             Members who publish and offer services are “Tour Operators.” Members
@@ -49,7 +49,7 @@ function Terms() {
             acting as an agent in any capacity for any Member, except as
             specified in the Payments Terms of Service (“Payment Terms”).
           </Text>
-          <Text>
+          <Text theme={theme}>
             We maintain other policies that supplement these Terms like our
             Privacy Policy, which describes our collection and use of personal
             data, and our Booking Terms, which govern any payment services
@@ -59,8 +59,8 @@ function Terms() {
             and complying with all laws, rules, regulations and contracts with
             third parties that apply to your Tour Operator Services.
           </Text>
-          <H2>1. Our Mission.</H2>
-          <Text>
+          <H2 theme={theme}>1. Our Mission.</H2>
+          <Text theme={theme}>
             Our mission is to create a world where you can travel with
             simplicity and ease. From safaris to mountain climbing, to relaxing
             on a beach, browse through many travel options to find the ones that
@@ -69,9 +69,9 @@ function Terms() {
             Operator profiles, and Guest reviews. If you have questions, just
             message the Tour Operator or us at hello@cloudsafaris.com.
           </Text>
-          <h2>Client Terms</h2>
-          <H3>2. Searching, Booking and Cancellations on CloudSafaris.</H3>
-          <Text>
+          <h2 theme={theme}>Client Terms</h2>
+          <H3 theme={theme}>2. Searching, Booking and Cancellations on CloudSafaris.</H3>
+          <Text theme={theme}>
             You can search for Safari Services by using criteria like the travel
             destination, accommodation type, travel dates, and number of guests.
             You can also use filters to refine your search results. Search
@@ -81,11 +81,11 @@ function Terms() {
             previous trips and saved Listings, Tour Operator requirements (e.g.
             minimum age requirement), and more.
           </Text>
-          <text>
+          <text theme={theme}>
             Our aim is to provide exactly the right travel arrangements to suit
             your requirements.
-          </text>
-          <text>
+          </text theme={theme}>
+          <text theme={theme}>
             When you book a safari service, you are agreeing to pay all charges
             for your booking including the Safari service price, applicable
             fees, CloudSafaris’ service fee, offline fees, taxes, and any other
@@ -94,7 +94,7 @@ function Terms() {
             (as defined in the Payment Terms) used to book the Safari Service in
             order to collect Damage Claim (as defined in Section 17) amounts.
           </text>
-          <text>
+          <text theme={theme}>
             When you receive the booking confirmation, a contract for Tour
             Operator Services (a "Reservation") is formed directly between you,
             the Accommodation(s), Transportation Partners, and the Tour
@@ -104,7 +104,7 @@ function Terms() {
             rules, standards, policies, or requirements identified in the
             Listing or during checkout that apply to the Reservation.
           </text>
-          <text>
+          <text theme={theme}>
             The deposit required to book your trip is shown on your quotation.
             The deposit will be 30% of the total trip price, excepting air
             travel and any permits which need to be paid for in full at time of
@@ -117,7 +117,7 @@ function Terms() {
             cancellation as provided for herein the Deposit and any Additional
             Deposit will be forfeited by the Client.
           </text>
-          <text>
+          <text theme={theme}>
             You must make all payments in full and on time. Failure to make a
             payment may result in the cancellation of your travel and the
             forfeiture of your Deposit and any Additional Deposit. In such a
@@ -127,12 +127,12 @@ function Terms() {
             full refund would be provided, and we would have no further
             liability to you.
           </text>
-          <text>
+          <text theme={theme}>
             Your final balance will be due in full three calendar months prior
             to departure. Trips booked within three months of travel require
             full payment at the time of booking.
           </text>
-          <text>
+          <text theme={theme}>
             Payments can be made by bank transfer or by credit or debit card.
             While we do accept major credit cards including Visa, Mastercard and
             American Express, travelers must provide to us a click or signed
@@ -146,7 +146,7 @@ function Terms() {
             Operators) or as part of a team to provide their Tour Operator
             Services.
           </text>
-          <text>
+          <text theme={theme}>
             It is important for you to check the details on the Confirmation
             Invoice as soon as you get it. In the event of any discrepancy
             please contact us immediately at hello@cloudsafaris.com.
@@ -154,10 +154,10 @@ function Terms() {
             Suppliers on confirmed bookings by you on your behalf and remitting
             the booking fee element to the Company.
           </text>
-          <h4 fontSize="15px" color="black">
+          <h4 fontSize="15px" color="black" theme={theme}>
             <strong>2.2.2 Accommodation Reservations</strong>
           </h4>
-          <text>
+          <text theme={theme}>
             An Accommodation Reservation is a limited license to enter, occupy,
             and use the Accommodation. The Accommodation staff retain the right
             to re-enter the Accommodation during your stay, to the extent: (i)
@@ -169,8 +169,8 @@ function Terms() {
             of allowed Guests. Accommodation Reservations also extend to the
             hotels, lodges, camps, tented lodges and other housing.
           </text>
-          <h4 fontSize="15px" color="black">
-            <strong>
+          <h4 fontSize="15px" color="black" theme={theme}>
+            <strong theme={theme}>
               2.2.3 Reservations for Experiences and Other Tour Operator
               Services
             </strong>

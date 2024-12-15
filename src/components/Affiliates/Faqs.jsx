@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Container, H2, Wrapper, Text, Question, Answer } from '../../styles/Affiliates/Faqs'
 
-export default function Faqs() {
+export default function Faqs({theme}) {
   // Array of FAQ data
   const faqData = [
     {
@@ -35,17 +35,17 @@ export default function Faqs() {
   };
 
   return (
-    <Container>
-      <H2>Frequently Asked Questions</H2>
-      <Wrapper>
+    <Container theme={theme}>
+      <H2 theme={theme}>Frequently Asked Questions</H2>
+      <Wrapper theme={theme}>
         {faqData.map((faq, index) => (
           <div key={index} className='q-wrapper'>
-            <Question onClick={() => handleToggle(index)}>
+            <Question onClick={() => handleToggle(index)} theme={theme}>
               {faq.question}
               <span>{openFAQ === index ? '-' : '+'}</span> {/* Toggle icon */}
             </Question>
-            <Answer isOpen={openFAQ === index}>
-              <Text>{faq.answer}</Text>
+            <Answer isOpen={openFAQ === index} theme={theme}>
+              <Text theme={theme}>{faq.answer}</Text>
             </Answer>
           </div>
         ))}

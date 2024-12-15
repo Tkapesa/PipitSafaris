@@ -5,14 +5,14 @@ import Perks from '../components/about/Perks';
 import Team from '../components/about/Team';
 import HeroCommon from '../components/HeroCommon';
 
-export default function AboutPage() {
+export default function AboutPage({theme}) {
   return (
     <>
-      <HeroCommon />
-      <BookTrip />
-      <Accomodation/>
-      <Perks/>
-      <Team/>
+      <HeroCommon theme={theme}/>
+      <BookTrip theme={theme}/>
+      <Accomodation theme={theme}/>
+      <Perks theme={theme}/>
+      <Team theme={theme}/>
     </>
   )
 }

@@ -71,8 +71,8 @@ export const Right = styled.div`
 
 export const Strong = styled.strong`
    font-size: 18px;
-   color: #15171A;
-   margin-bottom: .8rem;
+   color: ${(props) => (props.theme === 'dark' ? '#fff' : '#15171A')};
+   margin-bottom: 0.8rem;
 
 `;
 
@@ -88,7 +88,8 @@ export const Paper = styled.span`
 
 export const Text = styled.p`
     font-size: 15px;
-    color: #333333;
+    /* color: #333333; */
+    color: ${(props) => (props.theme === 'dark' ? '#fff' : '#333333')} !important;
     margin-bottom: .8rem;
 `;
 
