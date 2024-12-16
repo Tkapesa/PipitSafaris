@@ -43,7 +43,7 @@ export const H3 = styled.h3`
 
 export const Text = styled.p`
   font-size: 16px;
-  color: ${(props) => (props.theme === 'dark' ? '#a1a1aa' : '#737373')};
+  color: ${(props) => (props.theme === 'dark' ? '#a1a1aa' : '#454545')};
 
 `;
 
@@ -57,7 +57,7 @@ export const List = styled.ul`
 
 export const ListItems = styled.li`
   font-size: 16px;
-  color: ${(props) => (props.theme === 'dark' ? '#a1a1aa' : '#737373')};
+  color: ${(props) => (props.theme === 'dark' ? '#a1a1aa' : '#454545')};
 
 `;
 
@@ -69,7 +69,7 @@ export const Right = styled.div`
 `;
 
 export const Strong = styled.strong`
- color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#737373')};
+ color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#454545')};
 `;
 
 export const Button = styled.button`

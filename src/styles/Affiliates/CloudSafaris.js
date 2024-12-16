@@ -55,7 +55,8 @@ export const Wrapper = styled.div`
 export const H2 = styled.h2`
     font-size: 60px;
     text-align: center;
-    color: #fff; /* White text color */
+    color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#fff')} !important;
+
     margin-bottom: 20px; /* Add space below the heading */
     z-index: 9;
     @media screen and (max-width: 767px){

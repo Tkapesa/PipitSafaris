@@ -12,7 +12,8 @@ export const Container = styled.section`
     background: #E8E8E8;
     margin-bottom: 72px;
     box-sizing: border-box;
-    @media screen and (max-width:767px){
+    background: ${(props) => (props.theme === 'dark' ? '#001730' : '#f6f6f6')};
+    @media screen and (max-width: 1024px){
       padding-top: 6rem;
       padding-bottom: 6rem;
       box-sizing: border-box; 
@@ -29,7 +30,7 @@ export const Wrapper = styled.div`
     width: 100%;
     margin: 0 auto;
     padding: 48px 32px;
-    @media screen and (max-width:767px){
+    @media screen and (max-width: 1024px){
       gap:6rem;
       justify-content: center;
       flex-direction: column-reverse !important;
@@ -49,7 +50,7 @@ export const Left = styled.div`
   max-width: 840px;
   width: 100%;
   text-align: left;
-  @media screen and (max-width:767px){
+  @media screen and (max-width: 1024px){
    
 }
 `;
@@ -61,8 +62,8 @@ export const Right = styled.div`
   justify-content: space-between;
   max-width: 280px;
   width: 100%;
-  @media screen and (max-width:767px){
-
+  @media screen and (max-width: 1024px){
+    max-width: 100%;
 }
 `;
 
@@ -78,8 +79,9 @@ export const Image = styled.img`
   border-radius: 1rem;
   width: 280px;
   height: 207px;
-  @media screen and (max-width:767px){
-
+  @media screen and (max-width: 1024px){
+    width: 100%;
+    height: auto;
 }
 `;
 
@@ -87,7 +89,7 @@ export const H2 = styled.h2`
   font-size: 48px;
   color: #212121;
   line-height: 1;
-  @media screen and (max-width:767px){
+  @media screen and (max-width: 1024px){
     font-size: 48px;
   }
 `;
@@ -96,16 +98,17 @@ export const Strong = styled.strong`
   font-size: 24px;
   color: #fff;
   padding-bottom: 16px;
-  @media screen and (max-width:767px){
+  @media screen and (max-width: 1024px){
     font-size: 18px;
   }
 `;
 
 export const Text = styled.p`
   font-size: 18px;
-  color: #212121;
+  /* color: #212121; */
+  color: ${(props) => (props.theme === 'dark' ? '#a1a1aa' : '#454545')};
   max-width: 80%;
-  @media screen and (max-width:767px){
+  @media screen and (max-width: 1024px){
     max-width: 100%;
 }
 

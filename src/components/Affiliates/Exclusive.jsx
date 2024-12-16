@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button, Container, Figure, H2, Left, Right, Text, Wrapper, Image } from '../../styles/Affiliates/Exclusive'
+import { Container, Figure, H2, Left, Right, Text, Wrapper, Image } from '../../styles/Affiliates/Exclusive'
+import { Button } from '../../styles/common/styles'
 
 export default function Exclusive({theme}) {
   return (
@@ -9,7 +10,7 @@ export default function Exclusive({theme}) {
             <Left theme={theme}>
                 <H2 theme={theme}>Seize exclusive opportuniities, while earning enticing commissions.</H2>
                 <Text theme={theme}>Grow your brand with our affiliate program, tailored for individuals interested in promoting and selling captivating safaris. Join us as a CloudSafaris affiliate.</Text>
-                <Button theme={theme}>Apply Now</Button>
+                 <Button variant="primary" style={{maxWidth:'150px'}}>Apply Now</Button>
             </Left>
             <Right theme={theme}>
                 <Figure theme={theme}>

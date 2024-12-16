@@ -9,6 +9,7 @@ import {
   List,
   Strong,
   Button,
+  H4
 } from "../../styles/terms/Style.js";
 
 function Terms({theme}) {
@@ -17,11 +18,11 @@ function Terms({theme}) {
       <Container theme={theme}>
         <Left theme={theme}>
           <H2 theme={theme}>Terms of Service</H2>
-          <strong theme={theme}>
+          <Strong theme={theme}>
             Section 25 of these Terms contains an arbitration agreement and
             class action waiver that apply to all claims brought against
             CloudSafaris in Canada. Please read them carefully.
-          </strong>
+          </Strong>
           <Text theme={theme}>
             These Terms of Service (“Terms”) are a binding legal agreement
             between you and CloudSafari Inc. (CloudSafaris Canada) that govern
@@ -154,9 +155,9 @@ function Terms({theme}) {
             Suppliers on confirmed bookings by you on your behalf and remitting
             the booking fee element to the Company.
           </Text>
-          <h4 fontSize="15px" color="black" theme={theme}>
-            <strong>2.2.2 Accommodation Reservations</strong>
-          </h4>
+          <H4 fontSize="15px" theme={theme}>
+            <Strong theme={theme}>2.2.2 Accommodation Reservations</Strong>
+          </H4>
           <Text theme={theme}>
             An Accommodation Reservation is a limited license to enter, occupy,
             and use the Accommodation. The Accommodation staff retain the right
@@ -169,13 +170,13 @@ function Terms({theme}) {
             of allowed Guests. Accommodation Reservations also extend to the
             hotels, lodges, camps, tented lodges and other housing.
           </Text>
-          <h4 fontSize="15px" color="black" theme={theme}>
-            <strong theme={theme}>
+          <H4 fontSize="15px" theme={theme}>
+            <Strong theme={theme}>
               2.2.3 Reservations for Experiences and Other Tour Operator
               Services
-            </strong>
-          </h4>
-          <Text>
+            </Strong>
+          </H4>
+          <Text theme={theme}>
             An Experience or other Tour Operator Service Reservation entitles
             you to participate in, attend, or use that Tour Operator Service.
             You are responsible for confirming that you, and anyone you invite,
@@ -187,10 +188,10 @@ function Terms({theme}) {
             join a Tour Operator Service unless they are included as an
             additional guest during the booking process.
           </Text>
-          <h4 fontSize="15px" color="black">
-            <strong>2.2.4 Booking Modifications & Amendments.</strong>
-          </h4>
-          <Text>
+          <H4 fontSize="15px" theme={theme}>
+            <Strong theme={theme}>2.2.4 Booking Modifications & Amendments.</Strong>
+          </H4>
+          <Text theme={theme}>
             The Company will make every effort to assist you if you wish to
             alter your arrangements. Guests and Tour Operators are responsible
             for any booking modifications they agree to make via the
@@ -200,13 +201,13 @@ function Terms({theme}) {
             suppliers, together with all communication charges or other expenses
             incurred by the Company as a result of the change.
           </Text>
-          <h4 fontSize="15px" color="black">
-            <strong>2.3 Cancellations</strong>
-          </h4>
-          <h4 fontSize="15px" color="black">
-            <strong>2.3.1 Travel Issues, and Refunds</strong>
-          </h4>
-          <Text>
+          <H4 fontSize="15px" theme={theme}>
+            <Strong theme={theme}>2.3 Cancellations</Strong>
+          </H4>
+          <H4 fontSize="15px" theme={theme}>
+            <Strong theme={theme}>2.3.1 Travel Issues, and Refunds</Strong>
+          </H4>
+          <Text theme={theme}>
             In general, if as a Guest you cancel a Reservation, the amount
             refunded to you is determined by the cancellation policy (as
             determined by CloudSafaris and the Tour Operator) that applies to
@@ -217,7 +218,7 @@ function Terms({theme}) {
             assistance or a partial or full refund pending the circumstance as
             evaluated by CloudSafaris
           </Text>
-          <Text>
+          <Text theme={theme}>
             All cancellations are subject to the Supplier Terms and Conditions
             of the Third Party Suppliers. Some Third Party Suppliers may choose
             to offer future travel credits in lieu of a cash refund. We
@@ -225,8 +226,8 @@ function Terms({theme}) {
             provide a refund or for Third Party Supplier insolvency or
             bankruptcy.
           </Text>
-          <h3>3. Your Responsibilities and Assumption of Risk.</h3>
-          <Text>
+          <H3 theme={theme}>3. Your Responsibilities and Assumption of Risk.</H3>
+          <Text theme={theme}>
             You are responsible and liable for your own acts and omissions and
             are also responsible for the acts and omissions of anyone you invite
             to join or provide access to any Accommodation, Experience,
@@ -243,7 +244,7 @@ function Terms({theme}) {
             behalf of the minor and you are solely responsible for the
             supervision of that minor.
           </Text>
-          <Text>
+          <Text theme={theme}>
             You are responsible and liable for your own acts and omissions and
             are also responsible for the acts and omissions of anyone you invite
             to join or provide access to any Accommodation, Experience,
@@ -260,7 +261,7 @@ function Terms({theme}) {
             behalf of the minor and you are solely responsible for the
             supervision of that minor.
           </Text>
-          <Text>
+          <Text theme={theme}>
             You are responsible and liable for your own acts and omissions and
             are also responsible for the acts and omissions of anyone you invite
             to join or provide access to any Accommodation, Experience,
@@ -278,39 +279,39 @@ function Terms({theme}) {
             supervision of that minor.
           </Text>
 
-          <List>
-            <ListItems>
+          <List theme={theme}>
+            <ListItems theme={theme}>
               Account means a unique account created for You to access our
               Service or parts of our Service.
             </ListItems>
-            <ListItems>
+            <ListItems theme={theme}>
               Affiliate means an entity that controls, is controlled by or is
               under common control with a party, where "control" means ownership
               of 50% or more of the shares, equity interest or other securities
               entitled to vote for election of directors or other managing
               authority.
             </ListItems>
-            <ListItems>
+            <ListItems theme={theme}>
               Company (referred to as either "the Company", "We", "Us" or "Our"
               in this Agreement) refers to CloudSafari Inc., 651 N Broad St,
               Suite 201, Middletown, DE 19709.
             </ListItems>
-            <ListItems>
+            <ListItems theme={theme}>
               Cookies are small files that are placed on Your computer, mobile
               device or any other device by a website, containing the details of
               Your browsing history on that website among its many uses.
             </ListItems>
-            <ListItems>Country refers to: Delaware, United States</ListItems>
-            <ListItems>
+            <ListItems theme={theme}>Country refers to: Delaware, United States</ListItems>
+            <ListItems theme={theme}>
               Device means any device that can access the Service such as a
               computer, a cellphone or a digital tablet.
             </ListItems>
-            <ListItems>
+            <ListItems theme={theme}>
               Personal Data is any information that relates to an identified or
               identifiable individual.
             </ListItems>
-            <ListItems>Service refers to the Website.</ListItems>
-            <ListItems>
+            <ListItems theme={theme}>Service refers to the Website.</ListItems>
+            <ListItems theme={theme}>
               Service Provider means any natural or legal person who processes
               the data on behalf of the Company. It refers to third-party
               companies or individuals employed by the Company to facilitate the
@@ -319,8 +320,8 @@ function Terms({theme}) {
               in analyzing how the Service is used.
             </ListItems>
           </List>
-          <h3>The Entire Contact</h3>
-          <Text>
+          <H3 theme={theme}>The Entire Contact</H3>
+          <Text theme={theme}>
             The Conditions (together with all enquiries, advice, quotations, or
             estimates addressed to, provided by or bookings made, and
             indemnities signed and the Company's Privacy Policy) constitute
@@ -337,10 +338,10 @@ function Terms({theme}) {
           </Text>
         </Left>
 
-        <Right>
-          <Strong>Still have questions for us?</Strong>
-          <Text>Our team has answers and would love to help.</Text>
-          <Button>
+        <Right theme={theme}>
+          <Strong theme={theme}>Still have questions for us?</Strong>
+          <Text theme={theme}>Our team has answers and would love to help.</Text>
+          <Button theme={theme}>
             Contact Us
             <svg
               aria-hidden="true"
@@ -358,8 +359,8 @@ function Terms({theme}) {
               ></path>
             </svg>
           </Button>
-          <H3 style={{ paddingTop: "16px" }}>Corporations Canada</H3>
-          <Text>
+          <H3 style={{ paddingTop: "16px" }} theme={theme}>Corporations Canada</H3>
+          <Text theme={theme}>
             TICO Registration #: 50027812 (Retail), 50027813 (Wholesale)
             <br></br>
             Corporation Name: CloudSafari, Inc.<br></br>

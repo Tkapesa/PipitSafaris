@@ -16,7 +16,7 @@ import {
 } from "../../styles/trips/Shows";
 import Data from "../../api/Trips.json";
 
-export default function TripBox() {
+export default function TripBox({theme}) {
   const [tourData, setTourData] = useState(Data);
   const [toggleImage, setToggleImage] = useState(false); // State for toggling images
 
@@ -58,7 +58,7 @@ export default function TripBox() {
         {tourData.length > 0 ? (
           <div className='boxes'>
             {tourData.map((tour, index) => (
-              <Box key={index}>
+              <Box theme={theme} key={index}>
                 <Figure>
                   <Image
                     src={toggleImage ? tour.altImageSrc : tour.imageSrc} // Toggle between images
@@ -67,32 +67,32 @@ export default function TripBox() {
                     height={364}
                   />
                 </Figure>
-                <Strong>{tour.title}</Strong>
-                <Paper>{tour.location}</Paper>
-                <Text>{tour.operator}</Text>
-                <Text className="text-main">{tour.description}</Text>
-                <List>
+                <Strong theme={theme}>{tour.title}</Strong>
+                <Paper theme={theme}>{tour.location}</Paper>
+                <Text theme={theme}>{tour.operator}</Text>
+                <Text theme={theme} className="text-main">{tour.description}</Text>
+                <List theme={theme}>
                   {tour.highlights && tour.highlights.length > 0 ? (
                     tour.highlights.map((highlight, index) => (
-                      <ListItems key={index}>{highlight}</ListItems>
+                      <ListItems theme={theme} key={index}>{highlight}</ListItems>
                     ))
                   ) : (
-                    <Text>No highlights available</Text>
+                    <Text theme={theme}>No highlights available</Text>
                   )}
                 </List>
-                <PriceWrapper>
-                  <Text>Starting at</Text>
-                  <Price>
-                    <Strong>${tour.price}</Strong>
-                    <Strong>{tour.currency}</Strong>
-                    <Paper>{tour.priceDescription}</Paper>
+                <PriceWrapper theme={theme}>
+                  <Text theme={theme}>Starting at</Text>
+                  <Price theme={theme}>
+                    <Strong theme={theme}>${tour.price}</Strong>
+                    <Strong theme={theme}>{tour.currency}</Strong>
+                    <Paper theme={theme}>{tour.priceDescription}</Paper>
                   </Price>
                 </PriceWrapper>
               </Box>
             ))}
           </div>
         ) : (
-          <div>No tours available</div>
+          <div theme={theme}>No tours available</div>
         )}
       </BoxWrapper>
     </Container>

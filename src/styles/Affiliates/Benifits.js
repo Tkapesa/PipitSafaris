@@ -12,7 +12,7 @@ export const Container = styled.section`
     margin-bottom: 120px;
     gap: 3rem;
     box-sizing: border-box;
-    @media screen and (max-width:767px){
+    @media screen and (max-width:1024px){
       box-sizing: border-box; 
       padding-left: 15px; 
       padding-right: 15px;
@@ -23,10 +23,11 @@ export const Container = styled.section`
 
 export const H2 = styled.h2`
   font-size: 48px;
-  color: #212121;
+  /* color: #212121; */
+  color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#f6f6f6')};
   line-height: 1;
   text-align: left;
-  @media screen and (max-width:767px){
+  @media screen and (max-width:1024px){
     font-size: 48px;
     text-align: center;
   }
@@ -48,7 +49,7 @@ export const Box = styled.div`
     flex-direction: column;
     align-content: center;
     align-items: center;
-    max-width: 320px;
+    max-width: 325px;
     width: 100%;
 `;
 
@@ -60,7 +61,7 @@ export const Figure = styled.figure`
 
 export const Image = styled.img`
   border-radius: 1rem;
-  width: 280px;
+  width: 325px;
   height: 207px;
   object-fit: cover;
 `;
@@ -69,18 +70,20 @@ export const Image = styled.img`
 
 export const Strong = styled.strong`
   font-size: 20px;
-  color: #212121;
+  /* color: #212121; */
+  color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#212121')};
   padding-bottom: 8px;
   text-align: center;
 
-  @media screen and (max-width:767px){
+  @media screen and (max-width:1024px){
     font-size: 20px;
   }
 `;
 
 export const Text = styled.p`
   font-size: 18px;
-  color: #212121;
+  /* color: #212121; */
+  color: ${(props) => (props.theme === 'dark' ? '#a1a1aa' : '#454545')};
   text-align: center;
 
 `;

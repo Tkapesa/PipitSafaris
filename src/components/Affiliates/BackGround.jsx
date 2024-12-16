@@ -13,7 +13,7 @@ export default function Exclusive({theme}) {
             </Left>
             <Right theme={theme}>
                 <Figure theme={theme}>
-                    <Image src='https://static.cloudsafaris.com/public/051b87ea-d698-4b0b-a392-4cee0cb398f9_PXL_20221013_032608434-min.jpg?action=get' alt='Safari Image' width={441} height={424} />
+                    <Image src='https://static.cloudsafaris.com/public/051b87ea-d698-4b0b-a392-4cee0cb398f9_PXL_20221013_032608434-min.jpg?action=get' alt='Safari Image' width={824} height={620} />
                 </Figure>
             </Right>
         </Wrapper>

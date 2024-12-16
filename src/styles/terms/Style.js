@@ -10,7 +10,7 @@ export const Container = styled.section`
   justify-content: space-between;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 130px 24px 24px;
+  padding: 130px 24px 130px 24px;
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 9rem;
@@ -30,14 +30,22 @@ export const Left = styled.div`
 
 export const H2 = styled.h2`
   font-size: 24px;
+  color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#000')};
 `;
 
 export const H3 = styled.h3`
   font-size: 18px;
+  color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#000')};
+`;
+
+export const H4 = styled.h3`
+  font-size: 18px;
+  color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#000')};
 `;
 
 export const Text = styled.p`
   font-size: 16px;
+  color: ${(props) => (props.theme === 'dark' ? '#a1a1aa' : '#454545')};
 `;
 
 export const List = styled.ul`
@@ -50,6 +58,7 @@ export const List = styled.ul`
 
 export const ListItems = styled.li`
   font-size: 16px;
+  color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#454545')};
 `;
 
 export const Right = styled.div`
@@ -59,7 +68,9 @@ export const Right = styled.div`
   gap: 0.25rem;
 `;
 
-export const Strong = styled.strong``;
+export const Strong = styled.strong`
+ color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#000')};
+`;
 
 export const Button = styled.button`
   display: flex;

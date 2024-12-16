@@ -7,7 +7,7 @@ export const Container = styled.section`
   margin: 0 auto 0px auto;
   margin-top: 6rem;
   margin-bottom: 8rem;
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 1024px){
     padding-left: 24px;
     padding-right: 24px;
     margin-top: 24px;
@@ -20,6 +20,8 @@ export const H2 = styled.h2`
   font-size: 36px;
   padding: 4px 0px;
   margin-bottom: 1.5rem;
+  color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#f6f6f6')};
+
 `;
 
 export const BoxWrapper = styled.div`
@@ -44,7 +46,9 @@ display: flex;
     width: 100%;
     .text-main{
       margin-top:0.75rem;
-      color: #000;
+      /* color: #000; */
+      color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#000')};
+
       @media screen and (max-width: 767px){
         font-size: 12px;
       }
@@ -83,9 +87,11 @@ export const Paper = styled.span`
 export const Text = styled.p`
   font-size: 0.875rem;
   line-height: 1.25rem;
-  color: #737373;
+  /* color: #737373; */
+  color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#737373')};
   &:nth-child(2){
-    color: #000;
+    /* color: #000; */
+    color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#000')};
   }
 `;
 
@@ -107,7 +113,8 @@ export const ListItems = styled.li`
   padding-right: 0.75rem;
   border: 1px solid #e8e8e8;
   border-radius: 9999px;
-  color: #000;
+  /* color: #000; */
+  color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#000')};
 `;
 
 export const Wrapper = styled.div``;
@@ -131,5 +138,5 @@ display: flex;
 align-items: center;
 gap: .25rem;
 font-size: 12px;
-
+color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#737373')};
 `;
