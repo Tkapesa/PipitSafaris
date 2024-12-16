@@ -3,34 +3,47 @@ import styled from "styled-components";
 // Container with a solid green background and background image with a dark overlay
 export const Container = styled.section`
   box-sizing: border-box;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
 
   @media screen and (max-width: 767px){
     box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media screen and (max-width: 1024px){
+    padding-left: 15px;
+    padding-right: 15px;
   }
 `;
 
 export const Wrapper = styled.div`
-   max-width: 720px;
+   max-width: 900px;
    width: 100%;
    margin: 0 auto;
    display: flex;
    align-items: center;
    flex-direction: row;
-   padding: 25px 0px;
    box-sizing: border-box;
+   background: ${(props) => (props.theme === 'dark' ? '#18181b' : '#fff')} !important;
+
+    padding: 0px 20px 0px 0px;
+    border-radius: 12px;
+    overflow: hidden;
    @media screen and (max-width: 767px){
     box-sizing: border-box;
     flex-direction: column;
-    /* padding-left: 15px;
-    padding-right: 15px; */
     padding: 25px 15px;
+
+ 
   }
    
 `;
 
 export const H2 = styled.h2`
    font-size: 16px;
-   max-width: 720px;
+   max-width: 900px;
    width: 100%;
    margin: 0 auto;
    display: flex;
@@ -39,6 +52,8 @@ export const H2 = styled.h2`
    border-bottom: 1px solid #e6e6e6;
    margin-bottom: 2.5rem;
    margin-top: 72px;
+   color: ${(props) => (props.theme === 'dark' ? '#d4d4d8' : '#15171A')} !important;
+
 `;
 
 export const Box = styled.div`
@@ -50,19 +65,30 @@ export const Box = styled.div`
 
 export const Left = styled.div`
    margin-right: 2.5rem;
-   @media screen and (max-width: 767px){
+   @media screen and (max-width: 1024px){
    margin: 0px;
+   width: 100%;
   }
 `;
 
 export const Figure = styled.figure`
    margin: 0px;
+   border-radius: 12px;
+   overflow: hidden;
+   @media screen and (max-width: 1024px){
+   margin-bottom: 15px;
+  }
 `;
 
 export const Image = styled.img`
        object-fit: cover;
        width: 100%;
        height: 100%;
+       border-radius: 12px;
+      ${Wrapper}:hover & {
+            transition: 0.3s ease all;
+            transform: scale(1.1);
+      }
 `;
 export const Right = styled.div`
    display: flex;
@@ -83,13 +109,15 @@ export const DateWrapper = styled.div`
 
 export const Paper = styled.span`
     font-size: 13px;
-    color: #999999;
+    /* color: #999999; */
+    color: ${(props) => (props.theme === 'dark' ? '#a1a1aa' : '#999999')} !important;
+
 `;
 
 export const Text = styled.p`
     font-size: 15px;
     /* color: #333333; */
-    color: ${(props) => (props.theme === 'dark' ? '#fff' : '#333333')} !important;
+    color: ${(props) => (props.theme === 'dark' ? '#a1a1aa' : '#333333')} !important;
    
    margin-bottom: .8rem;
 `;
@@ -106,7 +134,7 @@ export const Button = styled.button`
     font-weight: 700;
     padding: 0px 15px;
     color: #000;
-    border: 1px solid #e6e6e6;
+    border: 0px solid #e6e6e6;
     background: #fff;
     margin-bottom: .8rem;
     border-radius: 3px;
@@ -116,9 +144,17 @@ export const Button = styled.button`
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+
+    color: #212121;
+        text-transform: uppercase;
+        border-radius: 9999px;
+        border: 1px solid transparent;
+        background-color: #FFEA00;
+        transition: 0.3s ease all;
     &:hover{
-        border-color: #ccc;
-        opacity: 1;
-        cursor: pointer;
+      color: #ffffffe6;
+    background-color: hsla(0, 0%, 100%, 0);
+    border: 1px solid #ffffffe6;
+    cursor: pointer;
     }
 `;
