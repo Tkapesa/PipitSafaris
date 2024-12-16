@@ -28,7 +28,7 @@ export const Wrapper = styled.div`
   justify-content: start;
   color: #fff;
   gap: 2rem;
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 1200px){
     padding-left: 24px;
     padding-right: 24px;
   }
