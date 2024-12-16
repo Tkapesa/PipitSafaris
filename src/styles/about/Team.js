@@ -9,8 +9,6 @@ export const Container = styled.section`
   padding: 128px 0px;
   margin: 8rem auto;
   box-sizing: border-box;
-  /* background-color: #f6f6f6; */
-
  background: ${(props) => (props.theme === 'dark' ? '#121212' : '#f6f6f6')};
 
 
@@ -25,7 +23,7 @@ export const Container = styled.section`
   }
 
   @media (max-width: 480px) {
-    padding: 40px 10px;
+    padding: 40px 20px;
     margin: 1rem auto;
   }
 `;
@@ -66,7 +64,7 @@ export const Top = styled.div`
 export const H2 = styled.h2`
   font-size: 36px;
   /* color: #000; */
-    color: ${(props) => (props.theme === 'dark' ? '#fff' : '#000')};
+    color: ${(props) => (props.theme === 'dark' ? '#ededee' : '#000')};
 
   @media (max-width: 1024px) {
     font-size: 30px;
@@ -83,9 +81,8 @@ export const H2 = styled.h2`
 
 export const Text = styled.p`
   font-size: 16px;
-  /* color: #454545; */
-  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#454545')};
-
+  color: ${(props) => (props.theme === 'dark' ? '#a1a1aa' : '#454545')};
+  box-sizing: border-box;
   @media (max-width: 768px) {
     font-size: 14px;
   }
@@ -115,30 +112,38 @@ export const Bottom = styled.div`
 `;
 
 export const Box = styled.div`
-  max-width: 400px;
-  width: 400px;
-  height: 505px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0rem;
+    max-width: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0rem;
+    transition: 0.3s ease all;
+    background-color: ${(props) => (props.theme === 'dark' ? '#18181b' : 'transparent')};
+    border-radius: 12px;
+    padding: 25px 20px;
+    height: auto;
+    box-sizing: border-box;
 
   @media (max-width: 1024px) {
     max-width: 350px;
     width: 350px;
     height: 450px;
+    align-items: center;
   }
 
   @media (max-width: 768px) {
-    max-width: 300px;
-    width: 300px;
+    max-width: 100%;
+    width: 100%;
     height: 400px;
+    align-items: center;
+    margin-bottom: 15px;
   }
 
   @media (max-width: 480px) {
-    max-width: 250px;
-    width: 250px;
+    width: 100%;
     height: 350px;
+    margin-bottom: 15px;
   }
 `;
 
@@ -147,13 +152,15 @@ export const Figure = styled.figure`
   width: 100%;
   height: auto;
   margin: 0px;
-
+  overflow: hidden;
+  transition: 0.3s ease all;
   @media (max-width: 768px) {
-    max-width: 300px;
+    max-width: 100%;
   }
 
   @media (max-width: 480px) {
-    max-width: 250px;
+    max-width: 100%;
+    width: 100%;
   }
 `;
 
@@ -162,20 +169,26 @@ export const Image = styled.img`
   width: 100%;
   height: auto;
   border-radius: 0.75rem;
+  transition: 0.3s ease all;
+
+  ${Box}:hover & {
+    transition: 0.3s ease all;
+    transform: scale(1.1); /* Scale the image when the figure is hovered */
+    box-shadow: 0 0 15px rgba(0, 128, 255, 0.8); /* Glow effect on hover */
+  }
 
   @media (max-width: 768px) {
-    max-width: 300px;
+    max-width: 100%;
   }
 
   @media (max-width: 480px) {
-    max-width: 250px;
+    max-width: 100%;
   }
 `;
 
 export const H4 = styled.h4`
   font-size: 20px;
-  /* color: #000; */
-  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#000')};
+  color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#000')};
 
   padding-top: 8px;
   margin: 0px;
@@ -191,10 +204,11 @@ export const H4 = styled.h4`
 
 export const Strong = styled.strong`
   font-size: 16px;
-  /* color: #000; */
-  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#000')};
+  color: ${(props) => (props.theme === 'dark' ? '#a1a1aa' : '#000')};
 
-  font-weight: 500;
+  font-weight: 600;
+  padding-bottom: 10px;
+  padding-top: 5px;
 
   @media (max-width: 768px) {
     font-size: 14px;
@@ -208,7 +222,7 @@ export const Strong = styled.strong`
 export const Paper = styled.span`
   font-size: 14px;
   /* color: #5c5c5c; */
-  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#5c5c5c')};
+  color: ${(props) => (props.theme === 'dark' ? '#a1a1aa' : '#5c5c5c')};
 
   @media (max-width: 768px) {
     font-size: 12px;

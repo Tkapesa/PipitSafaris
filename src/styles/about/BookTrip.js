@@ -248,6 +248,7 @@ export const Right = styled.div`
 
   @media (max-width: 1024px) {
     max-width: 280px;
+    display: none;
   }
 
   @media (max-width: 768px) {

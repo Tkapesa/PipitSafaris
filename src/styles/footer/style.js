@@ -6,10 +6,12 @@ export const Wrapper = styled.footer`
   padding: 64px 32px 32px;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 0px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#fff')}; /* Light text for dark mode */
+  
+  border-top: 1px solid #ffffff26;
 `;
 
 export const Box = styled.div`

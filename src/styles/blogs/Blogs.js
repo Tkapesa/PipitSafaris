@@ -90,7 +90,8 @@ export const Text = styled.p`
     font-size: 15px;
     /* color: #333333; */
     color: ${(props) => (props.theme === 'dark' ? '#fff' : '#333333')} !important;
-    margin-bottom: .8rem;
+   
+   margin-bottom: .8rem;
 `;
 
 export const ButtonWrapper = styled.div`

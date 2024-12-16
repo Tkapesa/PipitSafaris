@@ -29,8 +29,8 @@ function Team({theme}) {
               dreams, and dedication that form the soul of our mission.
             </Text>
           </Top>
-          <Bottom>
-            <Box>
+          <Bottom theme={theme}>
+            <Box theme={theme}>
               <Figure>
                 <Image
                   src="https://static.cloudsafaris.com/public/JD2-CWP-2557.jpg?action=get"
@@ -44,7 +44,7 @@ function Team({theme}) {
               <Paper theme={theme}>A graduate from the University of Waterloo...</Paper>
             </Box>
 
-            <Box>
+            <Box theme={theme}>
               <Figure>
                 <Image
                   src="https://static.cloudsafaris.com/public/JD2-CWP-2557.jpg?action=get"
@@ -58,7 +58,7 @@ function Team({theme}) {
               <Paper theme={theme}>A graduate from the University of Waterloo...</Paper>
             </Box>
 
-            <Box>
+            <Box theme={theme}>
               <Figure>
                 <Image
                   src="https://static.cloudsafaris.com/public/JD2-CWP-2557.jpg?action=get"

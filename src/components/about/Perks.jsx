@@ -8,6 +8,7 @@ import {
   Strong,
   Text,
   Wrapper,
+  IconWrapper
 } from "../../styles/about/Perks";
 
 function Perks({theme}) {
@@ -27,6 +28,7 @@ function Perks({theme}) {
         </Text>
         <Wrapper>
           <Box theme={theme}>
+            <IconWrapper theme={theme}>
             <Icon>
               <svg
                 aria-hidden="true"
@@ -44,10 +46,12 @@ function Perks({theme}) {
                 ></path>
               </svg>
             </Icon>
+            </IconWrapper>
             <Strong theme={theme}>Secure payments</Strong>
             <Paper theme={theme}>Pay securely online with sensible desposits.</Paper>
           </Box>
-          <Box>
+          <Box theme={theme}>
+          <IconWrapper theme={theme}>
             <Icon>
               <svg
                 aria-hidden="true"
@@ -65,10 +69,12 @@ function Perks({theme}) {
                 ></path>
               </svg>
             </Icon>
+            </IconWrapper>
             <Strong theme={theme}>Secure payments</Strong>
             <Paper theme={theme}>Pay securely online with sensible desposits.</Paper>
           </Box>
-          <Box>
+          <Box theme={theme}>
+          <IconWrapper theme={theme}>
             <Icon>
               <svg
                 aria-hidden="true"
@@ -86,10 +92,12 @@ function Perks({theme}) {
                 ></path>
               </svg>
             </Icon>
+            </IconWrapper>
             <Strong theme={theme}>Secure payments</Strong>
             <Paper theme={theme}>Pay securely online with sensible desposits.</Paper>
           </Box>
-          <Box>
+          <Box theme={theme}>
+          <IconWrapper theme={theme}>
             <Icon>
               <svg
                 aria-hidden="true"
@@ -107,10 +115,12 @@ function Perks({theme}) {
                 ></path>
               </svg>
             </Icon>
+            </IconWrapper>
             <Strong theme={theme}>Secure payments</Strong>
             <Paper theme={theme}>Pay securely online with sensible desposits.</Paper>
           </Box>
-          <Box>
+          <Box theme={theme}>
+          <IconWrapper theme={theme}>
             <Icon>
               <svg
                 aria-hidden="true"
@@ -128,10 +138,12 @@ function Perks({theme}) {
                 ></path>
               </svg>
             </Icon>
+            </IconWrapper>
             <Strong theme={theme}>Secure payments</Strong>
             <Paper theme={theme}>Pay securely online with sensible desposits.</Paper>
           </Box>
-          <Box>
+          <Box theme={theme}>
+          <IconWrapper theme={theme}>
             <Icon>
               <svg
                 aria-hidden="true"
@@ -149,12 +161,9 @@ function Perks({theme}) {
                 ></path>
               </svg>
             </Icon>
+            </IconWrapper>
             <Strong theme={theme}>Secure payments</Strong>
-            <Paper theme={theme}>
-              Tailor your safari to match your interests – from wildlife
-              spotting to cultural tours, create the adventure you've dreamed
-              of.
-            </Paper>
+            <Paper theme={theme}>Pay securely online with sensible desposits.</Paper>
           </Box>
         </Wrapper>
       </Container>
