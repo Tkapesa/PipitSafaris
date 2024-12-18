@@ -92,7 +92,14 @@ export const Button = styled.button`
     border: 1px solid transparent;
     &:hover{
       color: #ffffffe6;
-      background-color: hsla(0, 0%, 100%, 0);
+      background-color: #000;
       border: 1px solid #ffffffe6;
+    }
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    svg{
+      width: 12px;
+      height: 12px;
     }
 `;

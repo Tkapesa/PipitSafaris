@@ -23,6 +23,7 @@ export const Wrapper = styled.div`
     gap: 2rem;
     justify-content: center;
     padding-top: 2rem;
+    display: none;
   }
 `;
 
@@ -57,22 +58,45 @@ export const MenuItems = styled.li`
   font-size: 14px;
   transition: 0.3s all;
   border: 0px solid transparent;
-  a{
-    color: ${({ theme }) => (theme === 'light' ? '#333' : '#fff')}; /* Text color for menu items */
-  }
-  &:hover {
-    /* background: ${({ theme }) => (theme === 'light' ? '#eee' : '#555')};  */
-    border-radius: .5rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    color: #FFEA00 !important;
-    cursor: pointer;
+
+  a {
+    color: #fff;
+    /* font-size: 20px; */
+    text-decoration: none;
+    padding: 5px 0px;
+    margin: 0px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
   }
 
-  @media (max-width: 768px) {
-    font-size: 16px;
+  a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #ffea00;
+    width: 0;
+    transition: width 0.3s ease;
+  }
+
+  a:hover::after {
+    width: 100%;
+    animation: heartbeat116 1.5s infinite;
+  }
+
+  @keyframes heartbeat116 {
+    0%, 100% {
+      width: 100%;
+    }
+    50% {
+      width: 60%;
+    }
+  }
+
+  a:hover {
+    color: #FFEA00; /* Optional color change on hover */
   }
 `;
 

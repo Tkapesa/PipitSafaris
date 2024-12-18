@@ -34,8 +34,8 @@ export default function Header({ toggleTheme, theme }) {
         </MenuList>
 
         <ButtonsWrapper>
-          <ButtonsPrimary>Find Your Trip</ButtonsPrimary>
-          <ButtonsSecondary>Sign in</ButtonsSecondary>
+          <ButtonsPrimary style={{backgroundColor: '#FFEA00'}}><Link to="/trips">Find Your </Link></ButtonsPrimary>
+          {/* <ButtonsSecondary>Sign in</ButtonsSecondary> */}
         </ButtonsWrapper>
 
         {/* Theme Toggle Button */}

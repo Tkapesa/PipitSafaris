@@ -8,9 +8,9 @@ import {
   Text,
   List,
   Strong,
-  Button,
   H4
 } from "../../styles/terms/Style.js";
+import { Button } from "../../styles/common/styles.js";
 
 function Terms({theme}) {
   return (
@@ -341,7 +341,7 @@ function Terms({theme}) {
         <Right theme={theme}>
           <Strong theme={theme}>Still have questions for us?</Strong>
           <Text theme={theme}>Our team has answers and would love to help.</Text>
-          <Button theme={theme}>
+          <Button variant="primary">
             Contact Us
             <svg
               aria-hidden="true"

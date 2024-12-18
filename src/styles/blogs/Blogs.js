@@ -42,7 +42,7 @@ export const Wrapper = styled.div`
 `;
 
 export const H2 = styled.h2`
-   font-size: 16px;
+   font-size: 24px;
    max-width: 900px;
    width: 100%;
    margin: 0 auto;
@@ -60,6 +60,7 @@ export const Box = styled.div`
    display: flex;
    align-items: flex-start;
    width: 100%;
+   margin-bottom: 15px;
    
 `;
 
@@ -126,6 +127,7 @@ export const ButtonWrapper = styled.div`
     margin: 0 auto;
     width: 100%;
     display: flex;
+    justify-content: center;
     margin: 40px 0px;
 `;
 

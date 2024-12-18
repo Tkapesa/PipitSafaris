@@ -9,7 +9,7 @@ export const Wrapper = styled.footer`
   border-radius: 0px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#fff')}; /* Light text for dark mode */
+  color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#c1c1c1')}; /* Light text for dark mode */
   
   border-top: 1px solid #ffffff26;
 `;
@@ -48,7 +48,7 @@ export const Main = styled.div`
   max-width: 176px;
   width: 100%;
   p{
-    color: #fff !important;
+    color: #c1c1c1 !important;
   }
   &:nth-child(1){
     max-width: 383px;
@@ -93,10 +93,48 @@ export const List = styled.ul`
 
 export const ListItems = styled.li`
   color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#fff')}; /* Softer text in dark mode */
-  a{
-    color: #fff;
+  
+  a {
+    color: #c1c1c1;
+    /* font-size: 20px; */
+    text-decoration: none;
+    padding: 5px 0px;
+    margin: 0px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #ffea00;
+    width: 0;
+    transition: width 0.3s ease;
+  }
+
+  a:hover::after {
+    width: 100%;
+    animation: heartbeat116 1.5s infinite;
+  }
+
+  @keyframes heartbeat116 {
+    0%, 100% {
+      width: 100%;
+    }
+    50% {
+      width: 60%;
+    }
+  }
+
+  a:hover {
+    color: #FFEA00; /* Optional color change on hover */
   }
 `;
+
 
 export const CopyRight = styled.div`
   color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#fff')}; /* Adjusted color for dark mode */

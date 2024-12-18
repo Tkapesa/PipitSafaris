@@ -8,9 +8,9 @@ import {
   Right,
   Text,
   List,
-  Strong,
-  Button,
+  Strong
 } from "../../styles/privacy/Style";
+import { Button } from "../../styles/common/styles";
 
 function Privacy({theme}) {
   return (
@@ -397,7 +397,7 @@ function Privacy({theme}) {
         <Right theme={theme}>
           <H3 theme={theme}>Still have questions for us?</H3>
           <Text theme={theme}>Our team has answers and would love to help.</Text>
-          <Button theme={theme}>
+          <Button variant="primary" style={{width: '200px'}}>
             Contact Us
             <svg
               aria-hidden="true"

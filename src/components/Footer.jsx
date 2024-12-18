@@ -44,10 +44,10 @@ export default function Footer({ theme }) {
             <H3 theme={theme} className='heading-footer'>General</H3>
             <List theme={theme}>
               <ListItems theme={theme}><Link to="/trips">Trips</Link></ListItems>
-              <ListItems theme={theme}>Hotels & Lodges</ListItems>
-              <ListItems theme={theme}>Destinations</ListItems>
+              <ListItems theme={theme}><Link to="#">Hotels & Lodges</Link></ListItems>
+              <ListItems theme={theme}><Link to="#">Destinations</Link></ListItems>
               <ListItems theme={theme}><Link to="/affiliates">Affiliates</Link></ListItems>
-              <ListItems theme={theme}><Link to="/find-trip">Find your trip</Link></ListItems>
+              <ListItems theme={theme}><Link to="/trip">Find your trip</Link></ListItems>
             </List>
           </LWraper>
           <LWraper theme={theme}>
@@ -67,8 +67,8 @@ export default function Footer({ theme }) {
           <LWraper theme={theme}>
             <H3 theme={theme} className='heading-footer'>Contact Us</H3>
             <List theme={theme}>
-              <ListItems theme={theme}>hello@cloudsafaris.com</ListItems>
-              <ListItems theme={theme}>4230 Sherwoodtowne Blvd, Mississauga, ON L4Z 2G6</ListItems>
+              <ListItems theme={theme}><Link to="#">hello@cloudsafaris.com</Link></ListItems>
+              <ListItems theme={theme}><Link to="#">4230 Sherwoodtowne Blvd, Mississauga, ON L4Z 2G6</Link></ListItems>
             </List>
           </LWraper>
         </InnerBox>
