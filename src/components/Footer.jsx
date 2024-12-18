@@ -47,7 +47,7 @@ export default function Footer({ theme }) {
               <ListItems theme={theme}><Link to="#">Hotels & Lodges</Link></ListItems>
               <ListItems theme={theme}><Link to="#">Destinations</Link></ListItems>
               <ListItems theme={theme}><Link to="/affiliates">Affiliates</Link></ListItems>
-              <ListItems theme={theme}><Link to="/trip">Find your trip</Link></ListItems>
+              <ListItems theme={theme}><Link to="/find-trip">Find your trip</Link></ListItems>
             </List>
           </LWraper>
           <LWraper theme={theme}>
