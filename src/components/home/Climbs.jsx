@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Data from "../../api/Safari.json";
+import Data from "../../api/Climbs.json";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -77,7 +77,7 @@ function Climbs() {
                     height={364}
                   />
                 </Figure>
-                <Strong className='inner-heading'>{tour.title}</Strong>
+                <Strong className="inner-heading">{tour.title}</Strong>
                 <Paper>{tour.location}</Paper>
                 <Text>{tour.operator}</Text>
                 <Text className="text-main">{tour.description}</Text>
