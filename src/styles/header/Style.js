@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-// Wrapper component - Entire header container
 export const Wrapper = styled.div`
   box-sizing: border-box;
   padding: 25px 25px;
@@ -14,81 +13,107 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   left: 0;
   right: 0;
-  background: ${({ theme }) =>
-    theme === "light" ? "#ffffff" : "#001730"}; /* Light vs Dark */
+  background: ${({ theme }) => (theme === "light" ? "#ffffff" : "#001730")};
   position: fixed;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -2px rgba(0, 0, 0, 0.1);
   height: 60px;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    padding-top: 2rem;
-    display: none; /* Hide the header on mobile */
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+    height: auto;
+    border-bottom: 1px solid #c1c1c1;
+    width: 100%;
   }
 `;
 
-// Logo component - used for placing the logo
 export const Logo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 150px; /* Responsive width */
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    max-width: 120px; /* Adjust for smaller screens */
+  }
 `;
 
-// Figure component for image wrapping
 export const Figure = styled.figure`
   margin: 0;
 `;
 
-// Image component for controlling image styles
 export const Image = styled.img`
-  width: 100%;
+  width: 65px;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Prevent distortion */
 `;
 
-// MenuList component - the container for menu items
 export const MenuList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
+  transition: 0.3s all;
   display: flex;
 
   @media (max-width: 768px) {
-    display: none; /* Hide menu items on mobile */
+    display: none;
   }
 `;
 
-// MenuItems component - individual menu items
 export const MenuItems = styled.li`
   padding: 8px 16px;
-  color: ${({ theme }) =>
-    theme === "light" ? "#333" : "#fff"}; /* Text color for menu items */
+  color: ${({ theme }) => (theme === "light" ? "#333" : "#fff")};
   font-size: 14px;
   transition: 0.3s all;
-  border: 0px solid transparent;
-
-  a {
-    color: ${({ theme }) =>
-      theme === "light" ? "#333" : "#fff"}; /* Text color for menu items */
-  }
-
-  &:hover {
-    border-radius: 0.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    color: #ffea00 !important;
-    cursor: pointer;
-  }
+  border-bottom: 0px solid #c1c1c17a;
 
   @media (max-width: 768px) {
-    font-size: 16px;
+    border-bottom: 1px solid #c1c1c17a;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0px;
+    margin: 0px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #ff5b00;
+    width: 0;
+    transition: width 0.3s ease;
+  }
+
+  a:hover::after {
+    width: 100%;
+    animation: heartbeat116 1.5s infinite;
+  }
+
+  @keyframes heartbeat116 {
+    0%,
+    100% {
+      width: 100%;
+    }
+    50% {
+      width: 60%;
+    }
+  }
+
+  a:hover {
+    color: #ff5b00;
   }
 `;
 
-// ButtonsWrapper component for holding buttons
 export const ButtonsWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -100,32 +125,27 @@ export const ButtonsWrapper = styled.div`
   }
 `;
 
-// Primary button style component
 export const ButtonsPrimary = styled.div`
   font-size: 14px;
   padding: 8px 16px;
-  color: ${({ theme }) =>
-    theme === "light" ? "#333" : "#fff"}; /* Button text color */
+  color: ${({ theme }) => (theme === "light" ? "#333" : "#fff")};
   background-color: ${({ theme }) =>
-    theme === "light" ? "#ffffff" : "#212121"}; /* Button background color */
+    theme === "light" ? "#ffffff" : "#212121"};
   border-radius: 0.5rem;
   cursor: pointer;
 
   @media (max-width: 768px) {
     font-size: 16px;
     padding: 12px 24px;
+    display: none;
   }
 `;
 
-// Secondary button style component
 export const ButtonsSecondary = styled.div`
   font-size: 14px;
   padding: 8px 16px;
   color: #fff;
-  background-color: ${({ theme }) =>
-    theme === "light"
-      ? "transparent"
-      : "transparent"}; /* Button background color in dark mode */
+  background-color: ${({ theme }) => "transparent"};
   border-radius: 0.5rem;
   cursor: pointer;
 
@@ -135,7 +155,6 @@ export const ButtonsSecondary = styled.div`
   }
 `;
 
-// Hamburger menu for mobile
 export const Hamburger = styled.div`
   display: none;
   flex-direction: column;
@@ -149,8 +168,8 @@ export const Hamburger = styled.div`
   div {
     width: 25px;
     height: 3px;
-    background-color: ${({ theme }) =>
-      theme === "light" ? "#333" : "#fff"}; /* Hamburger color */
+    background-color: ${({ theme }) => (theme === "light" ? "#333" : "#fff")};
+    transition: all 0.3s ease;
   }
 
   @media (max-width: 768px) {
@@ -158,36 +177,42 @@ export const Hamburger = styled.div`
   }
 `;
 
-// MobileMenu component - the container for the mobile version of the menu
 export const MobileMenu = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: ${({ theme }) =>
-    theme === "light" ? "#ffffff" : "#212121"}; /* Mobile menu background */
+    theme === "light" ? "#ffffff" : "#001730"};
   position: absolute;
-  top: 70px;
+  top: 65px;
   left: 0;
   width: 100%;
   padding: 20px 0;
+  z-index: 9;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 1;
+
+  &.open {
+    transform: translateY(0);
+    opacity: 1;
+  }
 
   @media (max-width: 768px) {
     display: flex;
-  }
-
-  ${MenuItems} {
-    padding: 12px;
-    font-size: 18px;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
   }
 `;
 
-// Theme toggle button for light/dark mode switching
 export const ThemeToggleButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
-  color: ${({ theme }) =>
-    theme === "light" ? "#000" : "#fff"}; /* Color of the toggle icon */
+  color: ${({ theme }) => (theme === "light" ? "#000" : "#fff")};
   font-size: 18px;
   padding: 10px;
   transition: color 0.3s ease;
