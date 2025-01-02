@@ -9,8 +9,9 @@ export const Container = styled.section`
   
 
   h2 {
-    padding: 48px 0;
-    font-size: 30px;
+    padding: 0;
+    font-size: 36px;
+    margin-bottom: 1.5rem;
     color: ${(props) => (props.theme === 'dark' ? '#fff' : '#212121')};
   }
 
@@ -48,6 +49,7 @@ export const Div = styled.div`
   justify-content: flex-start;
   gap: 3px;
   box-sizing: border-box;
+  
   .inner{
     min-height: 344px;
     max-width: 400px;
@@ -66,7 +68,8 @@ export const Div = styled.div`
     min-height: 344px;
     max-width: 400px;
     width: 100%;
-    background: linear-gradient(to right, #00000080, #00000040);
+    /* background: linear-gradient(to right, #00000080, #00000040); */
+    background: linear-gradient(157deg, #223ce4 25%, #ff182D 90%);
     border-radius: 1rem;
     padding: 24px;
     min-height: 400px;
@@ -82,9 +85,11 @@ export const Div = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    /* background: linear-gradient(157deg, #223ce4 25%, #ff182D 90%); */
 
     div {
-      background: linear-gradient(to right, #00000080, #00000040);
+      /* background: linear-gradient(to right, #00000080, #00000040); */
+      background: linear-gradient(157deg, #223ce4 25%, #ff182D 90%);
       padding: 24px;
       border-radius: 1rem;
 
@@ -107,7 +112,8 @@ export const Div = styled.div`
     min-height: 400px;
     max-width: 400px;
     width: 100%;
-    background: linear-gradient(to right, #00000080, #00000040);
+    /* background: linear-gradient(to right, #00000080, #00000040); */
+    background: linear-gradient(157deg, #223ce4 25%, #ff182D 90%);
     border-radius: 1rem;
     padding: 24px;
 
@@ -122,7 +128,7 @@ export const Div = styled.div`
 
 // Paragraph styling
 export const P = styled.p`
-  padding-top: 8px;
+  padding-top: 0px;
   font-size: 16px;
   color: #fff;
   padding-bottom: 2px;
@@ -132,7 +138,7 @@ export const P = styled.p`
 export const Paper = styled.strong`
   font-size: 20px;
   color: #fff;
-  padding-top: 4px;
+  padding-top: 10px;
 `;
 
 // IconWrapper to center and style icons
